@@ -72,7 +72,7 @@
 
     aside.col1 {
       grid-column: 1 / span 5;
-      background-image: url(/static/img/contact_bird.png);
+      background-image: url(../assets/img/contact_bird.png);
       background-repeat: no-repeat;
       background-position: -60px 00px;
       // background: LightPink;

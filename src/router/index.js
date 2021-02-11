@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router"
-import Home from './views/Index'
-import ArtistStatement from './views/ArtistStatement'
-import Portfolio from './views/Portfolio'
-import Shop from './views/Shop'
-import Licensing from './views/Licensing'
-import Wholesale from './views/Wholesale'
-import Contact from './views/Contact'
-import EmailConfirm from './views/EmailConfirm'
-import NotFound from './views/NotFound'
+import Home from '../views/Index'
+import ArtistStatement from '../views/ArtistStatement'
+import Portfolio from '../views/Portfolio'
+import Shop from '../views/Shop'
+import Licensing from '../views/Licensing'
+import Wholesale from '../views/Wholesale'
+import Contact from '../views/Contact'
+import EmailConfirm from '../views/EmailConfirm'
+import NotFound from '../views/NotFound'
 
 const routes = [
   {

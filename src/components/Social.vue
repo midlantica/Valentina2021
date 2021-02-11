@@ -41,34 +41,34 @@
       // @include clearfix;
 
       &.facebook {
-        background-image: url(~/static/img/icons/facebook.svg);
+        background-image: url('../assets/img/icons/facebook.svg');
 
         &:hover {
-          background-image: url(~/static/img/icons/facebook_hv.svg);
+          background-image: url('../assets/img/icons/facebook_hv.svg');
         }
       }
 
       &.instagram {
-        background-image: url(~/static/img/icons/instagram.svg);
+        background-image: url('../assets/img/icons/instagram.svg');
 
         &:hover {
-          background-image: url(~/static/img/icons/instagram_hv.svg);
+          background-image: url('../assets/img/icons/instagram_hv.svg');
         }
       }
 
       &.flickr {
-        background-image: url(~/static/img/icons/flickr.svg);
+        background-image: url('../assets/img/icons/flickr.svg');
 
         &:hover {
-          background-image: url(~/static/img/icons/flickr_hv.svg);
+          background-image: url('../assets/img/icons/flickr_hv.svg');
         }
       }
 
       &.pinterest {
-        background-image: url(~/static/img/icons/pinterest.svg);
+        background-image: url('../assets/img/icons/pinterest.svg');
 
         &:hover {
-          background-image: url(~/static/img/icons/pinterest_hv.svg);
+          background-image: url('../assets/img/icons/pinterest_hv.svg');
         }
       }
     }

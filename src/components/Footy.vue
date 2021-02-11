@@ -27,7 +27,7 @@
   .footerArt {
     // width: 100%;
     // height: 383px;
-    background-image: url(/static/img/footer.svg);
+    background-image: url(../assets/img/footer.svg);
     background-size: contain;
     background-position: bottom center;
     background-repeat: no-repeat;

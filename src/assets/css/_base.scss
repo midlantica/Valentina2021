@@ -1,6 +1,8 @@
 // VENDOR SASS
-@import './node_modules/compass-mixins/lib/compass';
-@import './node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import './colors.scss';
+
+@import '../../../node_modules/compass-mixins/lib/compass';
+@import '../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
 // @import '../css/vendor/html5Boilerplate';
 // @import '../css/vendor/normalize';
 
