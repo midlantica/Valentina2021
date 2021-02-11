@@ -1,0 +1,90 @@
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+  // background: red;
+
+  .galleryGrid {
+    flex-basis: 22%;
+    margin: 0 .5em 0em;
+
+    @include breakpoint($SmMdLg) {
+      flex-basis: 21%;
+      // background: red;
+    }
+
+    @include breakpoint($SmMd) {
+      flex-basis: 43%;
+      // background: green;
+    }
+
+    @include breakpoint($mdlg) {
+      flex-basis: 30%;
+      // background: purple;
+    }
+
+    @include breakpoint($sm) {
+      flex-basis: 100%;
+      // background: blue;
+    }
+
+    img {
+      cursor: pointer;
+      width: 100%;
+      background: $beige;
+      margin-bottom: 1em;
+      border-radius: 2px;
+      border: 1px solid $greyLighter;
+    }
+
+  }
+
+}
+
+ html body div main section .vue-lb-info{
+  padding-top: 0.6rem !important;
+}
+
+// .gallery {
+//   //
+//   .vue-lb-container {
+//     //
+//     .vue-lb-content {
+//       //
+//       .vue-lb-header {
+//         //
+//       }
+
+//       .vue-lb-figure {
+//         //
+//         .vue-lb-modal-image {
+//           //
+//         }
+
+//         .vue-lb-info {
+//           color: red !important;
+//           background: green !important;
+//             padding: 0.5em 0 0 !important;
+
+//         }
+
+//         .vue-lb-footer {
+//           color: red !important;
+//           background: green !important;
+//         }
+
+//       }
+//     }
+
+//   }
+// }
+
+// html > .vue-lb-container .vue-lb-content .vue-lb-figure .vue-lb-info {
+//   color: red !important;
+//   background: green !important;
+// }
+
