@@ -1,20 +1,77 @@
 import { createRouter, createWebHistory } from "vue-router"
-import Home from "../views/Home.vue"
+import Home from './views/Index'
+import ArtistStatement from './views/ArtistStatement'
+import Portfolio from './views/Portfolio'
+import Shop from './views/Shop'
+import Licensing from './views/Licensing'
+import Wholesale from './views/Wholesale'
+import Contact from './views/Contact'
+import EmailConfirm from './views/EmailConfirm'
+import NotFound from './views/NotFound'
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Home,
+    path: '/',
+    name: 'Home',
+    component: Home
+    // children: [
+    //   {
+    //     path: '',
+    //     component: Statement
+    //   },
+    //   {
+    //     path: '',
+    //     component: HomeContent
+    //   }
+    // ]
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    path: '/NotFound',
+    component: NotFound
   },
+  {
+    path: '*',
+    redirect: '/NotFound'
+  },
+  {
+    path: '/ArtistStatement',
+    name: 'ArtistStatement',
+    component: ArtistStatement
+  },
+  {
+    path: '/Portfolio',
+    name: 'Portfolio',
+    component: Portfolio
+  },
+  {
+    path: '/Shop',
+    name: 'Shop',
+    component: Shop
+  },
+  {
+    path: '/Licensing',
+    name: 'Licensing',
+    component: Licensing
+  },
+  {
+    path: '/Wholesale',
+    name: 'Wholesale',
+    component: Wholesale
+  },
+  {
+    path: '/Contact',
+    name: 'Contact',
+    component: Contact
+  },
+  {
+    path: '/EmailConfirm',
+    name: 'EmailConfirm',
+    component: EmailConfirm
+  },
+  {
+    path: '/404',
+    redirect: '/NotFound'
+  }
 ]
 
 const router = createRouter({

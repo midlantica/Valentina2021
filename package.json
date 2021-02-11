@@ -2,15 +2,22 @@
   "name": "valentina2021",
   "version": "0.1.0",
   "private": true,
+  "description": "Valentina Design website",
+  "author": "Andrew Harper <druharper@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "compass-mixins": "^0.12.10",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
+    "vue-image-lightbox": "^7.2.0",
+    "vue-lazyload": "^1.3.3",
+    "vue-router": "^4.0.0-0",
+    "vue-touch": "^1.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
