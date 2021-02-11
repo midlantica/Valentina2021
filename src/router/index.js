@@ -29,10 +29,10 @@ const routes = [
     path: '/NotFound',
     component: NotFound
   },
-  {
-    path: '*',
-    redirect: '/NotFound'
-  },
+  // {
+  //   path: '*',
+  //   redirect: '/NotFound'
+  // },
   {
     path: '/ArtistStatement',
     name: 'ArtistStatement',
