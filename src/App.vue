@@ -2,9 +2,9 @@
   <div class="wrapper">
     <headerTop/>
     <Navvy/>
-    <!-- <transition> -->
-      <router-view/>
-    <!-- </transition> -->
+      <transition>
+        <router-view/>
+      </transition>
     <Footy/>
   </div>
 </template>
@@ -12,14 +12,14 @@
 <script>
   import HeaderTop from './components/HeaderTop'
   import Navvy from './components/Navvy'
-  import Social from './components/Social'
+  // import Social from './components/Social'
   import Footy from './components/Footy'
 
   export default {
     components: {
       HeaderTop,
       Navvy,
-      Social,
+      // Social,
       Footy
     }
   }

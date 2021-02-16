@@ -6,7 +6,7 @@
         <router-link to="/" title="home">
           <img class="valPic" src="../assets/img/Valentina_Harper.jpg">
           <p class="statement">
-            < back
+            ＜ back
           </p>
         </router-link>
       </div>

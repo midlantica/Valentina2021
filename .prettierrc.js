@@ -6,7 +6,7 @@ module.exports = {
   trailingComma: 'es5',
   editorconfig: true,
   bracketSpacing: true,
-  jsxBracketSameLine: false,
+  // jsxBracketSameLine: false,
   jsxSingleQuote: true,
   arrowParens: 'always',
   vueIndentScriptAndStyle: true,
