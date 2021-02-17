@@ -13,15 +13,24 @@
         <img src="assets/img/shop/tshirt.png" alt="T-Shirts" />
         <p>T-Shirts</p>
       </a>
-      <a href="http://www.amazon.com/Valentina-Harper/e/B00MCMCYIA/ref=sr_ntt_srch_lnk_1?qid=1430838770&sr=8-1" target="_blank">
+      <a
+        href="http://www.amazon.com/Valentina-Harper/e/B00MCMCYIA/ref=sr_ntt_srch_lnk_1?qid=1430838770&sr=8-1"
+        target="_blank"
+      >
         <img src="assets/img/shop/books.jpg" alt="Books" />
         <p>Books</p>
       </a>
-      <a href="http://www.spoonflower.com/profiles/valentinaharper" target="_blank">
+      <a
+        href="http://www.spoonflower.com/profiles/valentinaharper"
+        target="_blank"
+      >
         <img src="assets/img/shop/fabric.jpg" alt="Fabrics" />
         <p>Fabrics</p>
       </a>
-      <a href="http://www.mywonderfulwalls.com/collections/valentina-harper" target="_blank">
+      <a
+        href="http://www.mywonderfulwalls.com/collections/valentina-harper"
+        target="_blank"
+      >
         <img src="assets/img/shop/mural.jpg" alt="Wall Decal" />
         <p>Wall Decal</p>
       </a>
@@ -36,13 +45,13 @@
   import Social from '../components/Social'
   export default {
     components: {
-      Social
+      Social,
     },
     metaInfo: {
       bodyAttrs: {
-        class: 'shop'
-      }
-    }
+        class: 'shop',
+      },
+    },
   }
 </script>
 
@@ -88,7 +97,6 @@
         font-size: 0.85em;
         text-align: center;
       }
-
     }
   }
 
@@ -115,5 +123,4 @@
       grid-column: 2 / span 11;
     }
   }
-
 </style>

@@ -1,11 +1,11 @@
 <template>
   <div class="wrapper">
-    <headerTop/>
-    <Navvy/>
-      <transition>
-        <router-view/>
-      </transition>
-    <Footy/>
+    <headerTop />
+    <Navvy />
+    <transition>
+      <router-view />
+    </transition>
+    <Footy />
   </div>
 </template>
 
@@ -20,12 +20,12 @@
       HeaderTop,
       Navvy,
       // Social,
-      Footy
-    }
+      Footy,
+    },
   }
 </script>
 
 <style lang="scss">
   // @import './node_modules/breakpoint-sass/stylesheets/breakpoint';
-  @import './assets/css/main.scss'
+  @import './assets/css/main.scss';
 </style>

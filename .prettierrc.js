@@ -3,10 +3,11 @@ module.exports = {
   parser: 'vue',
   semi: false,
   trailingComma: 'es5',
-  editorconfig: true,
+  editorConfig: true,
   bracketSpacing: true,
   jsxSingleQuote: true,
   arrowParens: 'always',
   vueIndentScriptAndStyle: true,
   quoteProps: 'as-needed',
+  tabWidth: 2
 }

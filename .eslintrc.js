@@ -14,7 +14,7 @@ module.exports = {
     "parser": "babel-eslint",
     "ecmaVersion": 2020,
       "ecmaFeatures": {
-      "jsx": true
+      "jsx": false
     }
   },
   rules: {
@@ -26,7 +26,7 @@ module.exports = {
       'error',
       'never'
     ],
-    'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
+    'prettier/prettier': ['error', { singleQuote: true, parser: 'vue' }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'space-before-function-paren': [
       'error',
@@ -43,7 +43,15 @@ module.exports = {
       "closeBracket": 0,
       "alignAttributesVertically": false,
       "ignores": []
-    }]
+    }],
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "void": "any"
+        }
+      }
+    ]
   },
 
 }
