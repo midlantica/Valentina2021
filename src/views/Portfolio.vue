@@ -310,14 +310,14 @@
         class: 'portfolio'
       }
     },
-    data () {
+    data() {
       return {
         images,
         siteLoading
       }
     },
     methods: {
-      openGallery (index) {
+      openGallery(index) {
         this.$refs.lightbox.showImage(index)
       }
     }

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router"
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Index'
 import ArtistStatement from '../views/ArtistStatement'
 import Portfolio from '../views/Portfolio'
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
     // children: [
     //   {
     //     path: '',
@@ -27,7 +27,7 @@ const routes = [
   },
   {
     path: '/NotFound',
-    component: NotFound
+    component: NotFound,
   },
   // {
   //   path: '*',
@@ -36,42 +36,42 @@ const routes = [
   {
     path: '/ArtistStatement',
     name: 'ArtistStatement',
-    component: ArtistStatement
+    component: ArtistStatement,
   },
   {
     path: '/Portfolio',
     name: 'Portfolio',
-    component: Portfolio
+    component: Portfolio,
   },
   {
     path: '/Shop',
     name: 'Shop',
-    component: Shop
+    component: Shop,
   },
   {
     path: '/Licensing',
     name: 'Licensing',
-    component: Licensing
+    component: Licensing,
   },
   {
     path: '/Wholesale',
     name: 'Wholesale',
-    component: Wholesale
+    component: Wholesale,
   },
   {
     path: '/Contact',
     name: 'Contact',
-    component: Contact
+    component: Contact,
   },
   {
     path: '/EmailConfirm',
     name: 'EmailConfirm',
-    component: EmailConfirm
+    component: EmailConfirm,
   },
   {
     path: '/404',
-    redirect: '/NotFound'
-  }
+    redirect: '/NotFound',
+  },
 ]
 
 const router = createRouter({

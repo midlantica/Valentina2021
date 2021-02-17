@@ -9,7 +9,7 @@
   import moment from 'moment'
 
   export default {
-    data () {
+    data() {
       return {
         year: moment().format('YYYY')
       }

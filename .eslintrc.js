@@ -3,34 +3,47 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ["plugin:vue/vue3-essential", "eslint:recommended", "@vue/prettier"],
+  'extends': [
+    'plugin:vue/vue3-essential',
+    'eslint:recommended',
+    '@vue/prettier',
+    "prettier",
+    "prettier/vue",
+  ],
   parserOptions: {
-    parser: "babel-eslint",
+    "parser": "babel-eslint",
+    "ecmaVersion": 2020,
+      "ecmaFeatures": {
+      "jsx": true
+    }
   },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    // "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-    // allow debugger during development
-    // allow paren-less arrow functions
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'arrow-parens': 1,
-    // INDENT DEFAULT AT 2 SPACES
-    // 'vue/html-quotes': ['error', 'single', { avoidEscape: false }],
-    // indent: ['error', 2],
-    // 'vue/script-indent': ['error', 2, { baseIndent: 1 }],
     'generator-star-spacing': 0,
     quotes: ['error', 'single', 'avoid-escape'],
-    // quotes: ['error', 'single'],
-    semi: ['error', 'never'],
+    semi: [
+      'error',
+      'never'
+    ],
     'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    // 'space-before-function-paren': ['error', 'never'],
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'space-before-function-paren': [
       'error',
       {
         anonymous: 'never',
         named: 'never',
-        asyncArrow: 'ignore',
-      },
+        asyncArrow: 'ignore'
+      }
     ],
+    // "vue/html-indent": "error",
+    "vue/html-indent": ["error", 2, {
+      "attribute": 1,
+      "baseIndent": 1,
+      "closeBracket": 0,
+      "alignAttributesVertically": false,
+      "ignores": []
+    }]
   },
+
 }
