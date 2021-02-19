@@ -1,18 +1,13 @@
 <template>
   <div class="centerContent">
     <router-link to="ArtistStatement">
-      <img class="valPic" src="../assets/img/Valentina_Harper.jpg">
+      <img class="valPic" src="../assets/img/Valentina_Harper.jpg" />
       <p class="statement">See Artist's Statement</p>
     </router-link>
   </div>
 </template>
 
-<script>
-
-</script>
-
 <style lang="scss" scoped>
-
   a {
     border-bottom: none;
     @include clearfix;

@@ -9,26 +9,25 @@
                    border-radius: 2px,
                    cursor: pointer;"
             @click="openGallery(index)"
-          >
+          />
         </div>
 
-        <lightbox ref="lightbox"
+        <lightbox
+          ref="lightbox"
           :showLightBox="false"
           :images="images"
           :show-caption="true"
           :nav="false"
           :showThumbs="false"
           :autoPlay="false"
-          :autoPlayTime=8000
+          :autoPlayTime="8000"
         ></lightbox>
-
       </div>
     </section>
 
     <aside class="col3">
-      <Social/>
+      <Social />
     </aside>
-
   </main>
 </template>
 
@@ -41,286 +40,292 @@
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/aaron_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/aaron.jpg',
-      caption: 'Aaron'
+      caption: 'Aaron',
     },
     {
-      thumb: '../assets/img/lightbox/gallery/portfolio/today_is_going_to_be_awesome_sm.jpg',
-      src: '../assets/img/lightbox/gallery/portfolio/today_is_going_to_be_awesome.jpg',
-      caption: 'Today Is Going To Be Awesome'
+      thumb:
+        '../assets/img/lightbox/gallery/portfolio/today_is_going_to_be_awesome_sm.jpg',
+      src:
+        '../assets/img/lightbox/gallery/portfolio/today_is_going_to_be_awesome.jpg',
+      caption: 'Today Is Going To Be Awesome',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/pins_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/pins.jpg',
-      caption: 'Pins'
+      caption: 'Pins',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/arabella_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/arabella.jpg',
-      caption: 'Arabella'
+      caption: 'Arabella',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/sugar_skull_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/sugar_skull.jpg',
-      caption: 'Sugar Skull'
+      caption: 'Sugar Skull',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/tennessee_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/tennessee.jpg',
-      caption: 'Tennessee'
+      caption: 'Tennessee',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/backpack_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/backpack.jpg',
-      caption: 'Backpack'
+      caption: 'Backpack',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/beer_glass_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/beer_glass.jpg',
-      caption: 'Beer Glass'
+      caption: 'Beer Glass',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/bags_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/bags.jpg',
-      caption: 'Bags'
+      caption: 'Bags',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/bee_awesome_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/bee_awesome.jpg',
-      caption: 'Bee Awesome'
+      caption: 'Bee Awesome',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/box_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/box.jpg',
-      caption: 'Box'
+      caption: 'Box',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/calendar_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/calendar.jpg',
-      caption: 'Calendar'
+      caption: 'Calendar',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/candle_valentina_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/candle_valentina.jpg',
-      caption: 'Candle Valentina'
+      caption: 'Candle Valentina',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/coin_bag_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/coin_bag.jpg',
-      caption: 'Coin Bag'
+      caption: 'Coin Bag',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/coloring_book_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/coloring_book.jpg',
-      caption: 'Coloring Book'
+      caption: 'Coloring Book',
     },
     {
-      thumb: '../assets/img/lightbox/gallery/portfolio/conexion_americas_mural_sm.jpg',
+      thumb:
+        '../assets/img/lightbox/gallery/portfolio/conexion_americas_mural_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/conexion_americas_mural.jpg',
-      caption: 'Conexion Americas Mural'
+      caption: 'Conexion Americas Mural',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/decal_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/decal.jpg',
-      caption: 'Decal'
+      caption: 'Decal',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/el_mago_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/el_mago.jpg',
-      caption: 'El Mago'
+      caption: 'El Mago',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/eva_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/eva.jpg',
-      caption: 'Eva'
+      caption: 'Eva',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/flowers_mural_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/flowers_mural.jpg',
-      caption: 'Flowers Mural'
+      caption: 'Flowers Mural',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/flying_mural_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/flying_mural.jpg',
-      caption: 'Flying Mural'
+      caption: 'Flying Mural',
     },
     {
-      thumb: '../assets/img/lightbox/gallery/portfolio/flying_mural_details_sm.jpg',
+      thumb:
+        '../assets/img/lightbox/gallery/portfolio/flying_mural_details_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/flying_mural_details.jpg',
-      caption: 'Flying Mural Details'
+      caption: 'Flying Mural Details',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/german_shepherd_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/german_shepherd.jpg',
-      caption: 'German Shepherd'
+      caption: 'German Shepherd',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/guitar_01_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/guitar_01.jpg',
-      caption: 'Guitar 01'
+      caption: 'Guitar 01',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/guitar_02_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/guitar_02.jpg',
-      caption: 'Guitar 02'
+      caption: 'Guitar 02',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/helios_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/helios.jpg',
-      caption: 'Helios'
+      caption: 'Helios',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/hello_person_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/hello_person.jpg',
-      caption: 'Hello Person'
+      caption: 'Hello Person',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/lets_do_this_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/lets_do_this.jpg',
-      caption: 'Lets Do This'
+      caption: 'Lets Do This',
     },
     {
-      thumb: '../assets/img/lightbox/gallery/portfolio/little_deer_flowers_sm.jpg',
+      thumb:
+        '../assets/img/lightbox/gallery/portfolio/little_deer_flowers_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/little_deer_flowers.jpg',
-      caption: 'Little Deer Flowers'
+      caption: 'Little Deer Flowers',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/little_planter_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/little_planter.jpg',
-      caption: 'Little Planter'
+      caption: 'Little Planter',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/magdalena_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/magdalena.jpg',
-      caption: 'Magdalena'
+      caption: 'Magdalena',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/maya_quotes_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/maya_quotes.jpg',
-      caption: 'Maya Quotes'
+      caption: 'Maya Quotes',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/mug_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/mug.jpg',
-      caption: 'Mug'
+      caption: 'Mug',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/nativity_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/nativity.jpg',
-      caption: 'Nativity'
+      caption: 'Nativity',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/notebooks_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/notebooks.jpg',
-      caption: 'Notebooks'
+      caption: 'Notebooks',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/octopus_bloom_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/octopus_bloom.jpg',
-      caption: 'Octopus Bloom'
+      caption: 'Octopus Bloom',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/pereza_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/pereza.jpg',
-      caption: 'Pereza'
+      caption: 'Pereza',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/pete_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/pete.jpg',
-      caption: 'Pete'
+      caption: 'Pete',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/phone_case_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/phone_case.jpg',
-      caption: 'Phone Case'
+      caption: 'Phone Case',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/pineapple_pen_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/pineapple_pen.jpg',
-      caption: 'Pineapple Pen'
+      caption: 'Pineapple Pen',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/planner_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/planner.jpg',
-      caption: 'Planner'
+      caption: 'Planner',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/plate_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/plate.jpg',
-      caption: 'Plate'
+      caption: 'Plate',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/prints_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/prints.jpg',
-      caption: 'Prints'
+      caption: 'Prints',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/pumpkins_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/pumpkins.jpg',
-      caption: 'Pumpkins'
+      caption: 'Pumpkins',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/shop_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/shop.jpg',
-      caption: 'Shop'
+      caption: 'Shop',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/table_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/table.jpg',
-      caption: 'Table'
+      caption: 'Table',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/unicorn_planter_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/unicorn_planter.jpg',
-      caption: 'Unicorn Planter'
+      caption: 'Unicorn Planter',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/valentin_mug_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/valentin_mug.jpg',
-      caption: 'Valentin Mug'
+      caption: 'Valentin Mug',
     },
     {
-      thumb: '../assets/img/lightbox/gallery/portfolio/valentina_address_book_sm.jpg',
+      thumb:
+        '../assets/img/lightbox/gallery/portfolio/valentina_address_book_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/valentina_address_book.jpg',
-      caption: 'Valentina Address Book'
+      caption: 'Valentina Address Book',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/watercolor_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/watercolor.jpg',
-      caption: 'Watercolor'
+      caption: 'Watercolor',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/wrapping_paper_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/wrapping_paper.jpg',
-      caption: 'Wrapping Paper'
+      caption: 'Wrapping Paper',
     },
     {
       thumb: '../assets/img/lightbox/gallery/portfolio/you_got_this_sm.jpg',
       src: '../assets/img/lightbox/gallery/portfolio/you_got_this.jpg',
-      caption: 'You Got This'
-    }
+      caption: 'You Got This',
+    },
   ]
 
   export default {
     components: {
       Lightbox,
-      Social
+      Social,
     },
     metaInfo: {
       bodyAttrs: {
-        class: 'portfolio'
-      }
+        class: 'portfolio',
+      },
     },
     data() {
       return {
         images,
-        siteLoading
+        siteLoading,
       }
     },
     methods: {
       openGallery(index) {
         this.$refs.lightbox.showImage(index)
-      }
-    }
+      },
+    },
   }
 </script>
 
@@ -345,7 +350,6 @@
     @include breakpoint($sm) {
       // grid-column: 2 / span 9;
     }
-
   }
 
   .portfolio main {
@@ -361,6 +365,4 @@
       // grid-column: 2 / span 11;
     }
   }
-
-
 </style>

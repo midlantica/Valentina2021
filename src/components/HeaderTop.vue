@@ -1,13 +1,10 @@
 <template>
   <header>
     <router-link to="/" title="home">
-      <div class="headerArt"></div>
+      <div class="headerArt" />
     </router-link>
   </header>
 </template>
-
-<script>
-</script>
 
 <style lang="scss">
   header {
@@ -47,7 +44,5 @@
       margin-bottom: 3em;
       padding-bottom: 57%;
     }
-
   }
 </style>
-

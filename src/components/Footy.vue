@@ -1,7 +1,7 @@
 <template>
   <footer>
     <p>Copyright 2008 &ndash; {{ year }}</p>
-    <div class="footerArt"></div>
+    <div class="footerArt" />
   </footer>
 </template>
 
@@ -11,9 +11,9 @@
   export default {
     data() {
       return {
-        year: moment().format('YYYY')
+        year: moment().format('YYYY'),
       }
-    }
+    },
   }
 </script>
 
@@ -61,5 +61,4 @@
       display: block;
     }
   }
-
 </style>

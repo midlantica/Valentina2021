@@ -9,5 +9,8 @@ module.exports = {
   arrowParens: 'always',
   vueIndentScriptAndStyle: true,
   quoteProps: 'as-needed',
-  tabWidth: 2
+  tabWidth: 2,
+  printWidth: 80,
+  jsxBracketSameLine: true,
+  // indent: -2
 }

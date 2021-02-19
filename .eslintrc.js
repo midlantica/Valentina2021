@@ -3,18 +3,18 @@ module.exports = {
   env: {
     node: true,
   },
-  'extends': [
+  extends: [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/prettier',
-    "prettier",
-    "prettier/vue",
+    // 'prettier',
+    // 'prettier/vue',
   ],
   parserOptions: {
-    "parser": "babel-eslint",
-    "ecmaVersion": 2020,
-      "ecmaFeatures": {
-      "jsx": false
+    'parser': 'babel-eslint',
+    'ecmaVersion': 2020,
+      'ecmaFeatures': {
+      'jsx': false
     }
   },
   rules: {
@@ -28,30 +28,43 @@ module.exports = {
     ],
     'prettier/prettier': ['error', { singleQuote: true, parser: 'vue' }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'never',
-        named: 'never',
-        asyncArrow: 'ignore'
+    'space-before-function-paren': ['error', {
+        'anonymous': 'never',
+        'named': 'never',
+        'asyncArrow': 'ignore'
       }
     ],
-    // "vue/html-indent": "error",
-    "vue/html-indent": ["error", 2, {
-      "attribute": 1,
-      "baseIndent": 1,
-      "closeBracket": 0,
-      "alignAttributesVertically": false,
-      "ignores": []
+    // 'vue/html-indent': 'error',
+    // 'indent': ['error', 4],
+    'vue/html-indent': ['error', 2, {
+      'attribute': 1,
+      'baseIndent': 1,
+      // 'closeBracket': 0,
+      // 'alignAttributesVertically': false,
+      'ignores': []
     }],
-    "vue/html-self-closing": [
-      "error",
+    'vue/html-self-closing': [
+      'error',
       {
-        "html": {
-          "void": "any"
+        'html': {
+          'void': 'any'
         }
       }
-    ]
+    ],
+    // 'vue/html-closing-bracket-newline': ['error', {
+    //     'singleline': 'never',
+    //     'multiline': 'always'
+    //   }
+    // ],
   },
-
+  overrides: [
+    {
+      'files': [
+        '*.vue'
+      ],
+      'rules': {
+        'indent': 'off'
+      }
+    }
+  ]
 }

@@ -1,21 +1,17 @@
 <template>
-
   <main>
-
     <aside class="col1">
-      <Bio/>
+      <Bio />
     </aside>
 
     <section class="home">
-      <HomeContent/>
+      <HomeContent />
     </section>
 
     <aside class="col3 marT2">
-      <Social/>
+      <Social />
     </aside>
-
   </main>
-
 </template>
 
 <script>
@@ -26,16 +22,12 @@
     components: {
       HomeContent,
       Bio,
-      Social
+      Social,
     },
     metaInfo: {
       bodyAttrs: {
-        class: 'index'
-      }
-    }
+        class: 'index',
+      },
+    },
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

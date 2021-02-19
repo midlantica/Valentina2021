@@ -1,6 +1,5 @@
 <template>
   <nav class="mainNav">
-
     <router-link to="/" title="home">
       <div class="navBtns homeBtn">home</div>
     </router-link>
@@ -22,15 +21,10 @@
     </router-link>
 
     <router-link to="/Contact" title="Contact">
-      <div class="navBtns contactBtn  marLH">contact</div>
+      <div class="navBtns contactBtn marLH">contact</div>
     </router-link>
-
   </nav>
 </template>
-
-<script>
-
-</script>
 
 <style lang="scss" scoped>
   .mainNav {
@@ -60,7 +54,7 @@
 
       @include breakpoint($SmMd) {
         font-family: $copy;
-        font-size: .775em;
+        font-size: 0.775em;
         width: initial;
         height: initial;
         margin: 0 0em;
@@ -68,7 +62,6 @@
         letter-spacing: 0.1em;
         // background: pink; ///////////// ------>>>>>>>
       }
-
     }
   }
 
@@ -100,8 +93,7 @@
       // background-size: contain;
       // padding: 1.6em 0.5em 0 0em;
       // background: $green;
-
-      }
+    }
 
     @include breakpoint($SmMd) {
       width: initial;
@@ -112,14 +104,13 @@
       background-image: none !important;
       text-align: center;
       margin: 0 1em;
-      margin: .5em .25em;
+      margin: 0.5em 0.25em;
 
       &:hover {
         background-image: none !important;
-        background: lighten($green,30);
+        background: lighten($green, 30);
         border: 1px dotted $purple;
       }
-
     }
 
     a {
@@ -129,7 +120,7 @@
   }
 
   .homeBtn {
-    padding-right: .5em;
+    padding-right: 0.5em;
     width: 100px;
 
     &:hover {
@@ -238,7 +229,7 @@
 
     @include breakpoint($SmMd) {
       background-image: none !important;
-      background: lighten($green,30);
+      background: lighten($green, 30);
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
@@ -253,7 +244,7 @@
     @include breakpoint($SmMd) {
       color: $black;
       background-image: none !important;
-      background: lighten($green,30);
+      background: lighten($green, 30);
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
@@ -267,7 +258,7 @@
 
     @include breakpoint($SmMd) {
       background-image: none !important;
-      background: lighten($green,30);
+      background: lighten($green, 30);
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
@@ -283,7 +274,7 @@
     @include breakpoint($SmMd) {
       color: $black;
       background-image: none !important;
-      background: lighten($green,30);
+      background: lighten($green, 30);
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
@@ -299,7 +290,7 @@
     @include breakpoint($SmMd) {
       color: $black;
       background-image: none !important;
-      background: lighten($green,30);
+      background: lighten($green, 30);
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
@@ -314,7 +305,7 @@
     @include breakpoint($SmMd) {
       color: $black;
       background-image: none !important;
-      background: lighten($green,30);
+      background: lighten($green, 30);
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
@@ -329,11 +320,10 @@
     @include breakpoint($SmMd) {
       color: $black;
       background-image: none !important;
-      background: lighten($green,30);
+      background: lighten($green, 30);
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
     }
   }
-
 </style>

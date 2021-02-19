@@ -1,29 +1,47 @@
 <template>
   <main>
-
     <section class="contactContent">
       <h2>Send an email</h2>
       <p>
-        <a href="mailto:valentina@valentinadesign.com">valentina@valentinadesign.com</a>
+        <a href="mailto:valentina@valentinadesign.com"
+          >valentina@valentinadesign.com</a
+        >
       </p>
       <h3>Or simply use this form</h3>
-
       <!-- Begin myContactForm.com Form HTML -->
-      <form id="contactForm" name="contactForm" method="post" action="http://www.mycontactform.com/sendform/sendform.php">
-
+      <form
+        id="contactForm"
+        name="contactForm"
+        method="post"
+        action="http://www.mycontactform.com/sendform/sendform.php"
+      >
         <div class="formInput">
           <label>name<span class="asterisk">*</span></label>
-          <input name="q1" type="text" id="q1" value="" size="12" maxlength="40" >
+          <input
+            name="q1"
+            type="text"
+            id="q1"
+            value=""
+            size="12"
+            maxlength="40"
+          />
         </div>
 
         <div class="formInput">
           <label>email<span class="asterisk">*</span></label>
-          <input name="email" type="email" id="email" size="12" maxlength="100" required>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            size="12"
+            maxlength="100"
+            required
+          />
         </div>
 
         <div class="formInput">
           <label>message&nbsp;</label>
-          <textarea name="q2" id="q2"></textarea>
+          <textarea name="q2" id="q2" />
         </div>
 
         <div class="formInput">
@@ -31,19 +49,21 @@
           <label><span class="asterisk">*</span>required</label>
         </div>
 
-        <input name="user" type="hidden" id="user" value="valentina_73">
-        <input name="formid" type="hidden" id="formid" value="135001">
-        <input name="subject" type="hidden" id="subject" value="ValentinaDesign.com Contact Email" />
-
+        <input name="user" type="hidden" id="user" value="valentina_73" />
+        <input name="formid" type="hidden" id="formid" value="135001" />
+        <input
+          name="subject"
+          type="hidden"
+          id="subject"
+          value="ValentinaDesign.com Contact Email"
+        />
       </form>
       <!-- End myContactForm.com Form HTML -->
-
     </section>
 
     <aside class="col3 marT3">
-      <Social/>
+      <Social />
     </aside>
-
   </main>
 </template>
 
@@ -52,18 +72,17 @@
 
   export default {
     components: {
-      Social
+      Social,
     },
     metaInfo: {
       bodyAttrs: {
-        class: 'contact'
-      }
-    }
+        class: 'contact',
+      },
+    },
   }
 </script>
 
 <style lang="scss" scoped>
-
   main {
     // display: grid;
     // grid-template-columns: repeat(12, 1fr);
@@ -81,13 +100,11 @@
         display: none;
         background-image: none;
       }
-
     }
 
     section.contactContent {
       // See layout.scss
     }
-
   }
 
   section.contactContent {
@@ -99,7 +116,7 @@
 
     h3 {
       font-size: 1em;
-      margin: 1.5em 0 .25em;
+      margin: 1.5em 0 0.25em;
     }
 
     p {
@@ -107,10 +124,9 @@
       color: $grey;
       font-size: 1em;
       letter-spacing: 0.065em;
-      margin: 0 .5em 0 0;
+      margin: 0 0.5em 0 0;
       padding: 0;
     }
-
   }
 
   #contactForm {
@@ -126,7 +142,7 @@
       align-items: flex-start;
       align-content: flex-start;
       flex-grow: 1;
-      padding-top: .75em;
+      padding-top: 0.75em;
       // margin-bottom: 3em;
       // flex-basis: 100%;
       // flex-grow: 1;
@@ -144,7 +160,7 @@
 
         button {
           // order: 1;
-          margin: .5em .5em 0 4em;
+          margin: 0.5em 0.5em 0 4em;
           // flex-shrink: 1;
           // align-self: flex-start;
 
@@ -155,25 +171,22 @@
           @include breakpoint($md) {
             margin-left: 4em;
           }
-
         }
 
         label {
           // order: 2;
-          margin: .75em .5em 0 5.5em;
-          font-size: .9em;
+          margin: 0.75em 0.5em 0 5.5em;
+          font-size: 0.9em;
           // align-self: flex-end;
           flex-basis: 0;
           color: lighten($grey, 30);
 
           @include breakpoint($SmMd) {
-            margin: .75em .5em 0 0em;
-
+            margin: 0.75em 0.5em 0 0em;
           }
 
           @include breakpoint($md) {
-            margin: .75em .5em 0 5.5em;
-
+            margin: 0.75em 0.5em 0 5.5em;
           }
         }
       }
@@ -198,7 +211,9 @@
         // flex-grow: 1;
       }
 
-      input, select, textarea {
+      input,
+      select,
+      textarea {
         font-size: 1em;
         font-family: $copy-bold;
         color: $purple;
@@ -206,7 +221,7 @@
         // margin: .5em 0 0 0;
         // width: 100%;
         background: tint(orange, 95%);
-        padding: 0 0 0 .3em;
+        padding: 0 0 0 0.3em;
         outline: none;
         flex-basis: 70%;
         @include border-radius(6px);
@@ -218,11 +233,10 @@
         @include breakpoint($sm) {
           flex-basis: 100%;
         }
-
       }
 
       textarea {
-        padding: .3em 0 0 .3em;
+        padding: 0.3em 0 0 0.3em;
 
         // @include breakpoint($SmMd) {
         //   flex-basis: 60%;
@@ -247,9 +261,6 @@
           background-color: $purple;
         }
       }
-
     }
-
   }
-
 </style>

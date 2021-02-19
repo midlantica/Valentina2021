@@ -9,9 +9,9 @@
   export default {
     metaInfo: {
       bodyAttrs: {
-        class: ''
-      }
-    }
+        class: '',
+      },
+    },
   }
 </script>
 
@@ -19,7 +19,8 @@
   main {
     margin: 2em auto;
     // @include span-columns(12);
-    h2, p {
+    h2,
+    p {
       text-align: center;
       font-size: 150%;
     }

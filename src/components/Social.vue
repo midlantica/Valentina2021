@@ -1,14 +1,29 @@
 <template>
   <div class="socialIconsBox">
-    <a class="socialIcon facebook" href="http://www.facebook.com/ValentinaRamosArt" target="_blank"></a>
-    <a class="socialIcon instagram" href="https://www.instagram.com/valentinadesign/" target="_blank"></a>
-    <a class="socialIcon flickr" href="http://www.flickr.com/photos/valentinadesign/" target="_blank"></a>
-    <a class="socialIcon pinterest" href="http://pinterest.com/valentinaharper/" target="_blank"></a>
+    <a
+      class="socialIcon facebook"
+      href="http://www.facebook.com/ValentinaRamosArt"
+      target="_blank"
+    />
+    <a
+      class="socialIcon instagram"
+      href="https://www.instagram.com/valentinadesign/"
+      target="_blank"
+    />
+    <a
+      class="socialIcon flickr"
+      href="http://www.flickr.com/photos/valentinadesign/"
+      target="_blank"
+    />
+    <a
+      class="socialIcon pinterest"
+      href="http://pinterest.com/valentinaharper/"
+      target="_blank"
+    />
   </div>
 </template>
 
 <script>
-
 </script>
 
 <style lang="scss" scoped>
@@ -34,7 +49,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       padding: 0;
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
       // flex-basis: 1;
       border-bottom: none;
       // flex-grow: 1;
@@ -73,5 +88,4 @@
       }
     }
   }
-
 </style>
