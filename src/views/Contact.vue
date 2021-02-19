@@ -4,7 +4,7 @@
       <h2>Send an email</h2>
       <p>
         <a href="mailto:valentina@valentinadesign.com"
-          >valentina@valentinadesign.com</a
+        >valentina@valentinadesign.com</a
         >
       </p>
       <h3>Or simply use this form</h3>

@@ -7,6 +7,11 @@ module.exports = {
       addStyleResource(config.module.rule('scss').oneOf(type))
     )
   },
+  css: {
+    // Enable CSS source maps.
+    sourceMap: true,
+  },
+  lintOnSave: false
 }
 
 function addStyleResource(rule) {

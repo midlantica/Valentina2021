@@ -1,70 +1,64 @@
 module.exports = {
   root: true,
+
   env: {
     node: true,
   },
+
   extends: [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    '@vue/prettier',
-    // 'prettier',
-    // 'prettier/vue',
+    'plugin:vue/recommended',
+    'eslint:recommended'
   ],
+
   parserOptions: {
-    'parser': 'babel-eslint',
-    'ecmaVersion': 2020,
-      'ecmaFeatures': {
-      'jsx': false
+    parser: 'babel-eslint',
+    ecmaVersion: 2020,
+      ecmaFeatures: {
+      jsx: false
     }
   },
+
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-console': 'off',
     'arrow-parens': 1,
     'generator-star-spacing': 0,
-    quotes: ['error', 'single', 'avoid-escape'],
+    quotes: [
+      'error',
+      'single'
+    ],
     semi: [
       'error',
       'never'
     ],
-    'prettier/prettier': ['error', { singleQuote: true, parser: 'vue' }],
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'space-before-function-paren': ['error', {
-        'anonymous': 'never',
-        'named': 'never',
-        'asyncArrow': 'ignore'
+    'no-debugger': 'off',
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'never',
+        named: 'never',
+        asyncArrow: 'ignore'
       }
     ],
-    // 'vue/html-indent': 'error',
-    // 'indent': ['error', 4],
-    'vue/html-indent': ['error', 2, {
-      'attribute': 1,
-      'baseIndent': 1,
-      // 'closeBracket': 0,
-      // 'alignAttributesVertically': false,
-      'ignores': []
-    }],
+    'vue/html-indent': [
+      'error',
+      2,
+      {
+        attribute: 1,
+        baseIndent: 1,
+        closeBracket: 0,
+        alignAttributesVertically: false,
+        ignores: []
+      }
+    ],
     'vue/html-self-closing': [
       'error',
       {
-        'html': {
+        html: {
           'void': 'any'
         }
       }
     ],
-    // 'vue/html-closing-bracket-newline': ['error', {
-    //     'singleline': 'never',
-    //     'multiline': 'always'
-    //   }
-    // ],
+    'vue/html-quotes': 'warn',
+    'vue/max-attributes-per-line': 'warn'
   },
-  overrides: [
-    {
-      'files': [
-        '*.vue'
-      ],
-      'rules': {
-        'indent': 'off'
-      }
-    }
-  ]
 }

@@ -20,17 +20,11 @@
         <img src="assets/img/shop/books.jpg" alt="Books" />
         <p>Books</p>
       </a>
-      <a
-        href="http://www.spoonflower.com/profiles/valentinaharper"
-        target="_blank"
-      >
+      <a href="http://www.spoonflower.com/profiles/valentinaharper" target="_blank">
         <img src="assets/img/shop/fabric.jpg" alt="Fabrics" />
         <p>Fabrics</p>
       </a>
-      <a
-        href="http://www.mywonderfulwalls.com/collections/valentina-harper"
-        target="_blank"
-      >
+      <a href="http://www.mywonderfulwalls.com/collections/valentina-harper" target="_blank">
         <img src="assets/img/shop/mural.jpg" alt="Wall Decal" />
         <p>Wall Decal</p>
       </a>
@@ -42,20 +36,20 @@
 </template>
 
 <script>
-  import Social from '../components/Social'
+  import Social from "../components/Social"
   export default {
     components: {
       Social,
     },
     metaInfo: {
       bodyAttrs: {
-        class: 'shop',
+        class: "shop",
       },
     },
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   section.shop {
     // @include clearfix;
     max-width: 1000px;

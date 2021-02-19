@@ -21,7 +21,7 @@
           :showThumbs="false"
           :autoPlay="false"
           :autoPlayTime="8000"
-        ></lightbox>
+        />
       </div>
     </section>
 
