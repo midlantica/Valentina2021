@@ -1,15 +1,15 @@
 <template>
-  <main class="twoColMain">
+  <section class="twoCol">
     <h2>Thanks!</h2>
     <p>Your information was submitted successfully.</p>
-  </main>
+  </section>
 </template>
 
 <script>
   export default {
     metaInfo: {
       bodyAttrs: {
-        class: '',
+        class: "",
       },
     },
   }

@@ -15,11 +15,7 @@
       href="http://www.flickr.com/photos/valentinadesign/"
       target="_blank"
     />
-    <a
-      class="socialIcon pinterest"
-      href="http://pinterest.com/valentinaharper/"
-      target="_blank"
-    />
+    <a class="socialIcon pinterest" href="http://pinterest.com/valentinaharper/" target="_blank" />
   </div>
 </template>
 
@@ -56,34 +52,34 @@
       // @include clearfix;
 
       &.facebook {
-        background-image: url('../assets/img/icons/facebook.svg');
+        background-image: url("../assets/img/icons/facebook.svg");
 
         &:hover {
-          background-image: url('../assets/img/icons/facebook_hv.svg');
+          background-image: url("../assets/img/icons/facebook_hv.svg");
         }
       }
 
       &.instagram {
-        background-image: url('../assets/img/icons/instagram.svg');
+        background-image: url("../assets/img/icons/instagram.svg");
 
         &:hover {
-          background-image: url('../assets/img/icons/instagram_hv.svg');
+          background-image: url("../assets/img/icons/instagram_hv.svg");
         }
       }
 
       &.flickr {
-        background-image: url('../assets/img/icons/flickr.svg');
+        background-image: url("../assets/img/icons/flickr.svg");
 
         &:hover {
-          background-image: url('../assets/img/icons/flickr_hv.svg');
+          background-image: url("../assets/img/icons/flickr_hv.svg");
         }
       }
 
       &.pinterest {
-        background-image: url('../assets/img/icons/pinterest.svg');
+        background-image: url("../assets/img/icons/pinterest.svg");
 
         &:hover {
-          background-image: url('../assets/img/icons/pinterest_hv.svg');
+          background-image: url("../assets/img/icons/pinterest_hv.svg");
         }
       }
     }

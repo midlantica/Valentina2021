@@ -26,14 +26,15 @@ body {
   background-position: center top;
   margin: -1px auto 0px;
   padding: 0 0 10px 0;
-  background-image: url('./assets/img/white_back_patt.png');
+  background-image: url("./assets/img/white_back_patt.png");
 
   @include breakpoint($SmMdLg) {
     background: $white;
   }
 }
 
-header, footer {
+header,
+footer {
   grid-column: 2 / span 10;
 
   @include breakpoint($SmMdLg) {
@@ -54,13 +55,11 @@ nav {
   margin-top: -3em;
   margin-bottom: 1em;
 
-
   @include breakpoint($SmMdLg) {
     grid-column: 2 / span 10;
     margin-top: -1.5em;
     // margin-bottom: 1em;
   }
-
 }
 
 .nav_gall {
@@ -74,14 +73,14 @@ nav {
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column: 3 / span 9;
+  grid-column: 3 / span 8;
   grid-row: 4;
   grid-auto-flow: row;
   max-width: 1000px;
   // margin: auto;
 
   @include breakpoint($SmMdLg) {
-    grid-column: 2 / span 11;
+    grid-column: 2 / span 10;
   }
 
   aside.col1 {
@@ -91,7 +90,6 @@ main {
       grid-column: 1 / span 12;
       margin: 1em 0;
     }
-
   }
 
   // Home
@@ -107,52 +105,46 @@ main {
     @include breakpoint($sm) {
       grid-column: 1 / span 11;
     }
-
   }
 
   // 2 Columns
   section.shop,
   section.twoCol {
-    grid-column: 2 / span 9;
+    grid-column: 1 / span 12;
 
     @include breakpoint($SmMdLg) {
-      grid-column: 2 / span 9;
+      // grid-column: 2 / span 10;
     }
 
     @include breakpoint($sm) {
-      grid-column: 2 / span 9;
+      // grid-column: 2 / span 10;
     }
-
   }
 
   section.contactContent {
     grid-column: 3 / span 7;
-      // background: DarkSeaGreen;
+    // background: DarkSeaGreen;
 
-      @include breakpoint($SmMdLg) {
-        grid-column: 1 / span 11;
-      }
-
-      @include breakpoint($sm) {
-        grid-column: 1 / span 11;
-      }
+    @include breakpoint($SmMdLg) {
+      grid-column: 1 / span 11;
     }
+
+    @include breakpoint($sm) {
+      grid-column: 1 / span 11;
+    }
+  }
 
   // 3rd Column - Social Icons
   aside.col3 {
-    grid-column: span 1;
+    grid-column: -1;
 
     @include breakpoint($sm) {
       //
     }
-
   }
-
-
 }
 
-
 body.contact aside.col3 {
-  grid-column: span 1;
+  grid-column: -1;
   // background: red;
 }

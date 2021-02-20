@@ -2,30 +2,30 @@
   <main>
     <section class="shop">
       <a href="http://www.valentinaharper.com/" target="_blank">
-        <img src="assets/img/shop/prints.jpg" alt="Prints" />
+        <img src="../assets/img/shop/prints.jpg" alt="Prints" />
         <p>Prints</p>
       </a>
       <a href="https://society6.com/valentinaramos" target="_blank">
-        <img src="assets/img/shop/duvet.jpg" alt="Home Decor" />
+        <img src="../assets/img/shop/duvet.jpg" alt="Home Decor" />
         <p>Home Decor</p>
       </a>
       <a href="https://www.teepublic.com/user/valentina-harper" target="_blank">
-        <img src="assets/img/shop/tshirt.png" alt="T-Shirts" />
+        <img src="../assets/img/shop/tshirt.png" alt="T-Shirts" />
         <p>T-Shirts</p>
       </a>
       <a
         href="http://www.amazon.com/Valentina-Harper/e/B00MCMCYIA/ref=sr_ntt_srch_lnk_1?qid=1430838770&sr=8-1"
         target="_blank"
       >
-        <img src="assets/img/shop/books.jpg" alt="Books" />
+        <img src="../assets/img/shop/books.jpg" alt="Books" />
         <p>Books</p>
       </a>
       <a href="http://www.spoonflower.com/profiles/valentinaharper" target="_blank">
-        <img src="assets/img/shop/fabric.jpg" alt="Fabrics" />
+        <img src="../assets/img/shop/fabric.jpg" alt="Fabrics" />
         <p>Fabrics</p>
       </a>
       <a href="http://www.mywonderfulwalls.com/collections/valentina-harper" target="_blank">
-        <img src="assets/img/shop/mural.jpg" alt="Wall Decal" />
+        <img src="../assets/img/shop/mural.jpg" alt="Wall Decal" />
         <p>Wall Decal</p>
       </a>
     </section>

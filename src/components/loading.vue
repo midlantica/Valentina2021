@@ -5,19 +5,19 @@
 </template>
 
 <script>
-export default {
-  data: () => ({
-    loading: false
-  }),
-  methods: {
-    start() {
-      this.loading = true
+  export default {
+    data: () => ({
+      loading: false,
+    }),
+    methods: {
+      start() {
+        this.loading = true
+      },
+      finish() {
+        this.loading = false
+      },
     },
-    finish() {
-      this.loading = false
-    }
   }
-}
 </script>
 
 <style scoped>
@@ -33,7 +33,7 @@ export default {
     background: #906290;
     padding-top: 200px;
     font-size: 4em;
-    z-index:    1000;
+    z-index: 1000;
     font-family: sans-serif;
   }
 </style>

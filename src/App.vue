@@ -2,17 +2,21 @@
   <div class="wrapper">
     <headerTop />
     <Navvy />
-    <transition>
-      <router-view />
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition>
+        <keep-alive>
+          <component :is="Component" />
+        </keep-alive>
+      </transition>
+    </router-view>
     <Footy />
   </div>
 </template>
 
 <script>
-  import HeaderTop from './components/HeaderTop'
-  import Navvy from './components/Navvy'
-  import Footy from './components/Footy'
+  import HeaderTop from "./components/HeaderTop"
+  import Navvy from "./components/Navvy"
+  import Footy from "./components/Footy"
 
   export default {
     components: {
@@ -25,5 +29,5 @@
 
 <style lang="scss">
   // @import './node_modules/breakpoint-sass/stylesheets/breakpoint';
-  @import './assets/css/main.scss';
+  @import "./assets/css/main.scss";
 </style>

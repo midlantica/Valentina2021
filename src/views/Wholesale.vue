@@ -29,7 +29,7 @@
         If you are interested in ordering duvet covers, pillow cases, shower curating, trays, and
         other decor products, visit
         <a href="https://www.denydesigns.com/collections/artist/ar:valentina-ramos" target="_blank"
-        >DenyDesigns</a
+          >DenyDesigns</a
         >
         to get the wholesale information.
       </p>
@@ -48,14 +48,14 @@
 </template>
 
 <script>
-  import Social from '../components/Social'
+  import Social from "../components/Social"
   export default {
     components: {
       Social,
     },
     metaInfo: {
       bodyAttrs: {
-        class: 'wholesale',
+        class: "wholesale",
       },
     },
   }

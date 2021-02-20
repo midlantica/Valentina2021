@@ -1,7 +1,9 @@
 <template>
-  <main class="twoColMain">
-    <h2>Error</h2>
-    <p>This page does not exist</p>
+  <main>
+    <section class="twoCol">
+      <h2>Error</h2>
+      <p>This page does not exist</p>
+    </section>
   </main>
 </template>
 
@@ -9,7 +11,7 @@
   export default {
     metaInfo: {
       bodyAttrs: {
-        class: '',
+        class: "",
       },
     },
   }

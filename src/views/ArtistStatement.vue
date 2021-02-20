@@ -20,8 +20,8 @@
 </template>
 
 <script>
-  import Statement from '../components/Statement'
-  import Social from '../components/Social'
+  import Statement from "../components/Statement"
+  import Social from "../components/Social"
   export default {
     components: {
       Statement,
@@ -29,7 +29,7 @@
     },
     metaInfo: {
       bodyAttrs: {
-        class: 'index',
+        class: "index",
       },
     },
   }

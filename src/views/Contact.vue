@@ -3,9 +3,7 @@
     <section class="contactContent">
       <h2>Send an email</h2>
       <p>
-        <a href="mailto:valentina@valentinadesign.com"
-        >valentina@valentinadesign.com</a
-        >
+        <a href="mailto:valentina@valentinadesign.com">valentina@valentinadesign.com</a>
       </p>
       <h3>Or simply use this form</h3>
       <!-- Begin myContactForm.com Form HTML -->
@@ -17,26 +15,12 @@
       >
         <div class="formInput">
           <label>name<span class="asterisk">*</span></label>
-          <input
-            name="q1"
-            type="text"
-            id="q1"
-            value=""
-            size="12"
-            maxlength="40"
-          />
+          <input name="q1" type="text" id="q1" value="" size="12" maxlength="40" />
         </div>
 
         <div class="formInput">
           <label>email<span class="asterisk">*</span></label>
-          <input
-            name="email"
-            type="email"
-            id="email"
-            size="12"
-            maxlength="100"
-            required
-          />
+          <input name="email" type="email" id="email" size="12" maxlength="100" required />
         </div>
 
         <div class="formInput">
@@ -68,7 +52,7 @@
 </template>
 
 <script>
-  import Social from '../components/Social'
+  import Social from "../components/Social"
 
   export default {
     components: {
@@ -76,7 +60,7 @@
     },
     metaInfo: {
       bodyAttrs: {
-        class: 'contact',
+        class: "contact",
       },
     },
   }
@@ -86,7 +70,7 @@
   main {
     // display: grid;
     // grid-template-columns: repeat(12, 1fr);
-    grid-column: 3 / span 9 !important;
+    grid-column: 3 / span 8 !important;
     // background: lightgrey;
 
     aside.col1 {
