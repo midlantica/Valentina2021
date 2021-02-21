@@ -24,10 +24,5 @@
       Bio,
       Social,
     },
-    metaInfo: {
-      bodyAttrs: {
-        class: "index",
-      },
-    },
   }
 </script>

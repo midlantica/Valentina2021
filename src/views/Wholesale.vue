@@ -53,11 +53,6 @@
     components: {
       Social,
     },
-    metaInfo: {
-      bodyAttrs: {
-        class: "wholesale",
-      },
-    },
   }
 </script>
 

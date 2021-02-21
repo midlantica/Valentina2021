@@ -1,6 +1,6 @@
 .contact .content aside.col1 {
   // @include span-columns(3 of 10);
-  background-image: url(../assetsimg/contact_bird.png);
+  background-image: url(../assets/img/contact_bird.png);
   background-repeat: no-repeat;
   background-position: -90px 20px;
   // @include fill-parent();
@@ -11,7 +11,6 @@
     display: none;
     // @include shift(2);
   }
-
 }
 
 .contactTable {
@@ -40,8 +39,6 @@ h2.emailHead {
   margin-bottom: 0.2em;
 }
 
-
-
 .contact aside.social {
   margin-top: 5.25em;
 }
@@ -53,25 +50,26 @@ h2.emailHead {
     font-size: 0.8em;
     text-align: left;
   }
-  a { text-decoration: none;
+  a {
+    text-decoration: none;
   }
 }
 
 #contactForm .emailLeft {
   margin: 0;
   text-align: left;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   @include breakpoint($mobile) {
     font-size: 0.8em;
     text-align: left;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 }
 
 /* FORM */
 
 #contactForm {
-  margin: .75em 0 0em 0;
+  margin: 0.75em 0 0em 0;
 }
 
 #contactForm .tr-cells td {
@@ -92,7 +90,7 @@ h2.emailHead {
   color: $grey;
   font-size: 1em;
   letter-spacing: 0.065em;
-  margin: 0 .5em 0 0;
+  margin: 0 0.5em 0 0;
   padding: 0;
   text-align: top;
   text-align: right;
@@ -103,7 +101,7 @@ h2.emailHead {
   color: $grey;
   font-size: 1em;
   letter-spacing: 0.065em;
-  margin: 0 .5em 0 0;
+  margin: 0 0.5em 0 0;
   padding: 0;
   text-align: top;
   text-align: left;
@@ -119,15 +117,17 @@ h2.emailHead {
   height: 1.7em;
 }
 
-#contactForm input, select, textarea {
+#contactForm input,
+select,
+textarea {
   border: 1px dashed $purple;
-  margin: .5em 0 0 0;
+  margin: 0.5em 0 0 0;
   width: 100%;
   background-color: tint(orange, 95%);
   font-family: $copy-bold;
   color: $purple;
   font-size: 1em;
-  padding: 0 0 0 .3em;
+  padding: 0 0 0 0.3em;
   outline: none;
   @include border-radius(6px);
 
@@ -137,7 +137,7 @@ h2.emailHead {
 }
 
 #contactForm textarea {
-  padding: .3em 0 0 .3em;
+  padding: 0.3em 0 0 0.3em;
 }
 
 #contactForm button {
@@ -148,7 +148,7 @@ h2.emailHead {
   font-family: $copy;
   color: white;
   font-size: 1.25em;
-  margin: .5em 0 0 0;
+  margin: 0.5em 0 0 0;
   letter-spacing: 0.05em;
   padding: 2px 0 2px 0;
   @include border-radius(6px);

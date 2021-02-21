@@ -27,11 +27,6 @@
       Statement,
       Social,
     },
-    metaInfo: {
-      bodyAttrs: {
-        class: "index",
-      },
-    },
   }
 </script>
 

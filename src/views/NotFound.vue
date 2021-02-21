@@ -8,13 +8,7 @@
 </template>
 
 <script>
-  export default {
-    metaInfo: {
-      bodyAttrs: {
-        class: "",
-      },
-    },
-  }
+  export default {}
 </script>
 
 <style lang="scss" scoped>

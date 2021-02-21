@@ -4,7 +4,7 @@
       <div class="gallery">
         <div class="galleryGrid" v-for="(image, index) in images" :key="image">
           <img
-            v-lazy="image.thumb"
+            src="media.thumb"
             style="width: 100%,
                    border-radius: 2px,
                    cursor: pointer;"
@@ -12,8 +12,8 @@
           />
         </div>
 
-        <lightbox
-          ref="lightbox"
+        <LightBox
+          ref="lightBox"
           :showLightBox="false"
           :images="images"
           :show-caption="true"
@@ -32,11 +32,11 @@
 </template>
 
 <script>
-  import Lightbox from "vue-image-lightbox"
+  import LightBox from "vue-image-lightbox"
   import siteLoading from "../assets/img/siteloading.gif"
   import Social from "../components/Social"
 
-  const images = [
+  const media = [
     {
       thumb: "../assets/img/lightbox/gallery/portfolio/aaron_sm.jpg",
       src: "../assets/img/lightbox/gallery/portfolio/aaron.jpg",
@@ -301,17 +301,12 @@
 
   export default {
     components: {
-      Lightbox,
+      LightBox,
       Social,
-    },
-    metaInfo: {
-      bodyAttrs: {
-        class: "portfolio",
-      },
     },
     data() {
       return {
-        images,
+        media,
         siteLoading,
       }
     },

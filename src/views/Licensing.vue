@@ -28,11 +28,6 @@
     components: {
       Social,
     },
-    metaInfo: {
-      bodyAttrs: {
-        class: "license",
-      },
-    },
   }
 </script>
 

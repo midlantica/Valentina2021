@@ -108,8 +108,7 @@ main {
   }
 
   // 2 Columns
-  section.shop,
-  section.twoCol {
+  section.shop {
     grid-column: 1 / span 12;
 
     @include breakpoint($SmMdLg) {
@@ -121,8 +120,20 @@ main {
     }
   }
 
+  section.twoCol {
+    grid-column: 3 / span 9;
+
+    @include breakpoint($SmMdLg) {
+      // grid-column: 2 / span 10;
+    }
+
+    @include breakpoint($sm) {
+      // grid-column: 2 / span 10;
+    }
+  }
+
   section.contactContent {
-    grid-column: 3 / span 7;
+    grid-column: 4 / span 7;
     // background: DarkSeaGreen;
 
     @include breakpoint($SmMdLg) {

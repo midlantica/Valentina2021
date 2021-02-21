@@ -31,6 +31,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    z-index: 10;
 
     a {
       font-family: $header-font;
@@ -75,7 +76,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 672px 106px;
-    padding: 1.6em 0.5em 0 0em;
+    padding: 1.5em 0.5em 0 0em;
 
     &:hover {
       cursor: pointer;
@@ -137,7 +138,7 @@
   }
 
   .portfolioBtn {
-    padding: 1.6em 0.5em 0 0.3em;
+    padding: 1.5em 0.5em 0 0.3em;
     width: 100px;
 
     &:hover {
@@ -171,7 +172,7 @@
   }
 
   .licensingBtn {
-    padding: 1.6em 0.5em 0 0.7em;
+    padding: 1.5em 0.5em 0 0.7em;
     width: 115px;
 
     &:hover {
@@ -188,7 +189,7 @@
   }
 
   .wholesaleBtn {
-    padding: 1.6em 0.5em 0 0.7em;
+    padding: 1.5em 0.5em 0 0.7em;
     width: 103px;
 
     &:hover {
@@ -281,7 +282,7 @@
     }
   }
 
-  body.license .licensingBtn {
+  body.licensing .licensingBtn {
     // background-image: url(../assets/img/buttons/shop_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
     background-position-x: -307px;

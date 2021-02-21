@@ -58,11 +58,6 @@
     components: {
       Social,
     },
-    metaInfo: {
-      bodyAttrs: {
-        class: "contact",
-      },
-    },
   }
 </script>
 
@@ -94,7 +89,7 @@
   section.contactContent {
     //
     h2 {
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin-bottom: 0.2em;
     }
 
@@ -144,7 +139,7 @@
 
         button {
           // order: 1;
-          margin: 0.5em 0.5em 0 4em;
+          margin: 0.5em 0em 0 4em;
           // flex-shrink: 1;
           // align-self: flex-start;
 
@@ -153,13 +148,13 @@
           }
 
           @include breakpoint($md) {
-            margin-left: 4em;
+            margin-left: 0em;
           }
         }
 
         label {
           // order: 2;
-          margin: 0.75em 0.5em 0 5.5em;
+          margin: 0.75em 0.5em 0 5em;
           font-size: 0.9em;
           // align-self: flex-end;
           flex-basis: 0;
@@ -170,7 +165,7 @@
           }
 
           @include breakpoint($md) {
-            margin: 0.75em 0.5em 0 5.5em;
+            margin: 0.75em 0.5em 0 0em;
           }
         }
       }

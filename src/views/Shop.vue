@@ -41,11 +41,6 @@
     components: {
       Social,
     },
-    metaInfo: {
-      bodyAttrs: {
-        class: "shop",
-      },
-    },
   }
 </script>
 
@@ -107,14 +102,18 @@
   .shop main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-column: 2 / span 11;
+    grid-column: 3 / span 8;
     grid-row: 4;
     grid-auto-flow: row;
     max-width: 1000px;
     // margin: auto;
 
-    @include breakpoint($SmMdLg) {
-      grid-column: 2 / span 11;
+    @include breakpoint($mdlg) {
+      grid-column: 2 / span 10;
     }
+
+    // @include breakpoint($SmMdLg) {
+    //   grid-column: 2 / span 10;
+    // }
   }
 </style>
