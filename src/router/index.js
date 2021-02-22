@@ -204,7 +204,7 @@ router.beforeEach((to, from, next) => {
     // Add the meta tags to the document head.
     .forEach((tag) => document.head.appendChild(tag))
 
-  vueBodyClass.guard(to, next())
+  vueBodyClass.guard(to, from, next())
   // next()
 })
 export default router
