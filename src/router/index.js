@@ -6,7 +6,7 @@ import Shop from "../views/Shop"
 import Licensing from "../views/Licensing"
 import Wholesale from "../views/Wholesale"
 import Contact from "../views/Contact"
-import EmailConfirm from "../views/EmailConfirm"
+import thankyou from "../views/thankyou"
 import NotFound from "../views/NotFound"
 import VueBodyClass from "vue-body-class"
 
@@ -121,9 +121,9 @@ const routes = [
     },
   },
   {
-    path: "/EmailConfirm",
-    name: "EmailConfirm",
-    component: EmailConfirm,
+    path: "/thankyou",
+    name: "thankyou",
+    component: thankyou,
     meta: {
       title: "Valentina Design | Email confirmation",
       metaTags: [

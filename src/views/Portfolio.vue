@@ -1,9 +1,7 @@
 <template>
   <main>
     <section class="twoCol">
-      <div class="gallery">
-        <image-box images-list-class="flex" :images="images" />
-      </div>
+      <ImageBox image-list-class="reddy" :images="images" />
     </section>
 
     <aside class="col3">
@@ -24,263 +22,263 @@
     setup() {
       const images = [
         {
-          thumb: "../assets/img/portfolio/aaron_sm.jpg",
-          src: "../assets/img/portfolio/aaron.jpg",
+          thumb: "/portfolio/aaron_sm.jpg",
+          src: "/portfolio/aaron.jpg",
           caption: "Aaron",
         },
         {
-          thumb: "../assets/img/portfolio/today_is_going_to_be_awesome_sm.jpg",
-          src: "../assets/img/portfolio/today_is_going_to_be_awesome.jpg",
+          thumb: "/portfolio/today_is_going_to_be_awesome_sm.jpg",
+          src: "/portfolio/today_is_going_to_be_awesome.jpg",
           caption: "Today Is Going To Be Awesome",
         },
         {
-          thumb: "../assets/img/portfolio/pins_sm.jpg",
-          src: "../assets/img/portfolio/pins.jpg",
+          thumb: "/portfolio/pins_sm.jpg",
+          src: "/portfolio/pins.jpg",
           caption: "Pins",
         },
         {
-          thumb: "../assets/img/portfolio/arabella_sm.jpg",
-          src: "../assets/img/portfolio/arabella.jpg",
+          thumb: "/portfolio/arabella_sm.jpg",
+          src: "/portfolio/arabella.jpg",
           caption: "Arabella",
         },
         {
-          thumb: "../assets/img/portfolio/sugar_skull_sm.jpg",
-          src: "../assets/img/portfolio/sugar_skull.jpg",
+          thumb: "/portfolio/sugar_skull_sm.jpg",
+          src: "/portfolio/sugar_skull.jpg",
           caption: "Sugar Skull",
         },
         {
-          thumb: "../assets/img/portfolio/tennessee_sm.jpg",
-          src: "../assets/img/portfolio/tennessee.jpg",
+          thumb: "/portfolio/tennessee_sm.jpg",
+          src: "/portfolio/tennessee.jpg",
           caption: "Tennessee",
         },
         {
-          thumb: "../assets/img/portfolio/backpack_sm.jpg",
-          src: "../assets/img/portfolio/backpack.jpg",
+          thumb: "/portfolio/backpack_sm.jpg",
+          src: "/portfolio/backpack.jpg",
           caption: "Backpack",
         },
         {
-          thumb: "../assets/img/portfolio/beer_glass_sm.jpg",
-          src: "../assets/img/portfolio/beer_glass.jpg",
+          thumb: "/portfolio/beer_glass_sm.jpg",
+          src: "/portfolio/beer_glass.jpg",
           caption: "Beer Glass",
         },
         {
-          thumb: "../assets/img/portfolio/bags_sm.jpg",
-          src: "../assets/img/portfolio/bags.jpg",
+          thumb: "/portfolio/bags_sm.jpg",
+          src: "/portfolio/bags.jpg",
           caption: "Bags",
         },
         {
-          thumb: "../assets/img/portfolio/bee_awesome_sm.jpg",
-          src: "../assets/img/portfolio/bee_awesome.jpg",
+          thumb: "/portfolio/bee_awesome_sm.jpg",
+          src: "/portfolio/bee_awesome.jpg",
           caption: "Bee Awesome",
         },
         {
-          thumb: "../assets/img/portfolio/box_sm.jpg",
-          src: "../assets/img/portfolio/box.jpg",
+          thumb: "/portfolio/box_sm.jpg",
+          src: "/portfolio/box.jpg",
           caption: "Box",
         },
         {
-          thumb: "../assets/img/portfolio/calendar_sm.jpg",
-          src: "../assets/img/portfolio/calendar.jpg",
+          thumb: "/portfolio/calendar_sm.jpg",
+          src: "/portfolio/calendar.jpg",
           caption: "Calendar",
         },
         {
-          thumb: "../assets/img/portfolio/candle_valentina_sm.jpg",
-          src: "../assets/img/portfolio/candle_valentina.jpg",
+          thumb: "/portfolio/candle_valentina_sm.jpg",
+          src: "/portfolio/candle_valentina.jpg",
           caption: "Candle Valentina",
         },
         {
-          thumb: "../assets/img/portfolio/coin_bag_sm.jpg",
-          src: "../assets/img/portfolio/coin_bag.jpg",
+          thumb: "/portfolio/coin_bag_sm.jpg",
+          src: "/portfolio/coin_bag.jpg",
           caption: "Coin Bag",
         },
         {
-          thumb: "../assets/img/portfolio/coloring_book_sm.jpg",
-          src: "../assets/img/portfolio/coloring_book.jpg",
+          thumb: "/portfolio/coloring_book_sm.jpg",
+          src: "/portfolio/coloring_book.jpg",
           caption: "Coloring Book",
         },
         {
-          thumb: "../assets/img/portfolio/conexion_americas_mural_sm.jpg",
-          src: "../assets/img/portfolio/conexion_americas_mural.jpg",
+          thumb: "/portfolio/conexion_americas_mural_sm.jpg",
+          src: "/portfolio/conexion_americas_mural.jpg",
           caption: "Conexion Americas Mural",
         },
         {
-          thumb: "../assets/img/portfolio/decal_sm.jpg",
-          src: "../assets/img/portfolio/decal.jpg",
+          thumb: "/portfolio/decal_sm.jpg",
+          src: "/portfolio/decal.jpg",
           caption: "Decal",
         },
         {
-          thumb: "../assets/img/portfolio/el_mago_sm.jpg",
-          src: "../assets/img/portfolio/el_mago.jpg",
+          thumb: "/portfolio/el_mago_sm.jpg",
+          src: "/portfolio/el_mago.jpg",
           caption: "El Mago",
         },
         {
-          thumb: "../assets/img/portfolio/eva_sm.jpg",
-          src: "../assets/img/portfolio/eva.jpg",
+          thumb: "/portfolio/eva_sm.jpg",
+          src: "/portfolio/eva.jpg",
           caption: "Eva",
         },
         {
-          thumb: "../assets/img/portfolio/flowers_mural_sm.jpg",
-          src: "../assets/img/portfolio/flowers_mural.jpg",
+          thumb: "/portfolio/flowers_mural_sm.jpg",
+          src: "/portfolio/flowers_mural.jpg",
           caption: "Flowers Mural",
         },
         {
-          thumb: "../assets/img/portfolio/flying_mural_sm.jpg",
-          src: "../assets/img/portfolio/flying_mural.jpg",
+          thumb: "/portfolio/flying_mural_sm.jpg",
+          src: "/portfolio/flying_mural.jpg",
           caption: "Flying Mural",
         },
         {
-          thumb: "../assets/img/portfolio/flying_mural_details_sm.jpg",
-          src: "../assets/img/portfolio/flying_mural_details.jpg",
+          thumb: "/portfolio/flying_mural_details_sm.jpg",
+          src: "/portfolio/flying_mural_details.jpg",
           caption: "Flying Mural Details",
         },
         {
-          thumb: "../assets/img/portfolio/german_shepherd_sm.jpg",
-          src: "../assets/img/portfolio/german_shepherd.jpg",
+          thumb: "/portfolio/german_shepherd_sm.jpg",
+          src: "/portfolio/german_shepherd.jpg",
           caption: "German Shepherd",
         },
         {
-          thumb: "../assets/img/portfolio/guitar_01_sm.jpg",
-          src: "../assets/img/portfolio/guitar_01.jpg",
+          thumb: "/portfolio/guitar_01_sm.jpg",
+          src: "/portfolio/guitar_01.jpg",
           caption: "Guitar 01",
         },
         {
-          thumb: "../assets/img/portfolio/guitar_02_sm.jpg",
-          src: "../assets/img/portfolio/guitar_02.jpg",
+          thumb: "/portfolio/guitar_02_sm.jpg",
+          src: "/portfolio/guitar_02.jpg",
           caption: "Guitar 02",
         },
         {
-          thumb: "../assets/img/portfolio/helios_sm.jpg",
-          src: "../assets/img/portfolio/helios.jpg",
+          thumb: "/portfolio/helios_sm.jpg",
+          src: "/portfolio/helios.jpg",
           caption: "Helios",
         },
         {
-          thumb: "../assets/img/portfolio/hello_person_sm.jpg",
-          src: "../assets/img/portfolio/hello_person.jpg",
+          thumb: "/portfolio/hello_person_sm.jpg",
+          src: "/portfolio/hello_person.jpg",
           caption: "Hello Person",
         },
         {
-          thumb: "../assets/img/portfolio/lets_do_this_sm.jpg",
-          src: "../assets/img/portfolio/lets_do_this.jpg",
+          thumb: "/portfolio/lets_do_this_sm.jpg",
+          src: "/portfolio/lets_do_this.jpg",
           caption: "Lets Do This",
         },
         {
-          thumb: "../assets/img/portfolio/little_deer_flowers_sm.jpg",
-          src: "../assets/img/portfolio/little_deer_flowers.jpg",
+          thumb: "/portfolio/little_deer_flowers_sm.jpg",
+          src: "/portfolio/little_deer_flowers.jpg",
           caption: "Little Deer Flowers",
         },
         {
-          thumb: "../assets/img/portfolio/little_planter_sm.jpg",
-          src: "../assets/img/portfolio/little_planter.jpg",
+          thumb: "/portfolio/little_planter_sm.jpg",
+          src: "/portfolio/little_planter.jpg",
           caption: "Little Planter",
         },
         {
-          thumb: "../assets/img/portfolio/magdalena_sm.jpg",
-          src: "../assets/img/portfolio/magdalena.jpg",
+          thumb: "/portfolio/magdalena_sm.jpg",
+          src: "/portfolio/magdalena.jpg",
           caption: "Magdalena",
         },
         {
-          thumb: "../assets/img/portfolio/maya_quotes_sm.jpg",
-          src: "../assets/img/portfolio/maya_quotes.jpg",
+          thumb: "/portfolio/maya_quotes_sm.jpg",
+          src: "/portfolio/maya_quotes.jpg",
           caption: "Maya Quotes",
         },
         {
-          thumb: "../assets/img/portfolio/mug_sm.jpg",
-          src: "../assets/img/portfolio/mug.jpg",
+          thumb: "/portfolio/mug_sm.jpg",
+          src: "/portfolio/mug.jpg",
           caption: "Mug",
         },
         {
-          thumb: "../assets/img/portfolio/nativity_sm.jpg",
-          src: "../assets/img/portfolio/nativity.jpg",
+          thumb: "/portfolio/nativity_sm.jpg",
+          src: "/portfolio/nativity.jpg",
           caption: "Nativity",
         },
         {
-          thumb: "../assets/img/portfolio/notebooks_sm.jpg",
-          src: "../assets/img/portfolio/notebooks.jpg",
+          thumb: "/portfolio/notebooks_sm.jpg",
+          src: "/portfolio/notebooks.jpg",
           caption: "Notebooks",
         },
         {
-          thumb: "../assets/img/portfolio/octopus_bloom_sm.jpg",
-          src: "../assets/img/portfolio/octopus_bloom.jpg",
+          thumb: "/portfolio/octopus_bloom_sm.jpg",
+          src: "/portfolio/octopus_bloom.jpg",
           caption: "Octopus Bloom",
         },
         {
-          thumb: "../assets/img/portfolio/pereza_sm.jpg",
-          src: "../assets/img/portfolio/pereza.jpg",
+          thumb: "/portfolio/pereza_sm.jpg",
+          src: "/portfolio/pereza.jpg",
           caption: "Pereza",
         },
         {
-          thumb: "../assets/img/portfolio/pete_sm.jpg",
-          src: "../assets/img/portfolio/pete.jpg",
+          thumb: "/portfolio/pete_sm.jpg",
+          src: "/portfolio/pete.jpg",
           caption: "Pete",
         },
         {
-          thumb: "../assets/img/portfolio/phone_case_sm.jpg",
-          src: "../assets/img/portfolio/phone_case.jpg",
+          thumb: "/portfolio/phone_case_sm.jpg",
+          src: "/portfolio/phone_case.jpg",
           caption: "Phone Case",
         },
         {
-          thumb: "../assets/img/portfolio/pineapple_pen_sm.jpg",
-          src: "../assets/img/portfolio/pineapple_pen.jpg",
+          thumb: "/portfolio/pineapple_pen_sm.jpg",
+          src: "/portfolio/pineapple_pen.jpg",
           caption: "Pineapple Pen",
         },
         {
-          thumb: "../assets/img/portfolio/planner_sm.jpg",
-          src: "../assets/img/portfolio/planner.jpg",
+          thumb: "/portfolio/planner_sm.jpg",
+          src: "/portfolio/planner.jpg",
           caption: "Planner",
         },
         {
-          thumb: "../assets/img/portfolio/plate_sm.jpg",
-          src: "../assets/img/portfolio/plate.jpg",
+          thumb: "/portfolio/plate_sm.jpg",
+          src: "/portfolio/plate.jpg",
           caption: "Plate",
         },
         {
-          thumb: "../assets/img/portfolio/prints_sm.jpg",
-          src: "../assets/img/portfolio/prints.jpg",
+          thumb: "/portfolio/prints_sm.jpg",
+          src: "/portfolio/prints.jpg",
           caption: "Prints",
         },
         {
-          thumb: "../assets/img/portfolio/pumpkins_sm.jpg",
-          src: "../assets/img/portfolio/pumpkins.jpg",
+          thumb: "/portfolio/pumpkins_sm.jpg",
+          src: "/portfolio/pumpkins.jpg",
           caption: "Pumpkins",
         },
         {
-          thumb: "../assets/img/portfolio/shop_sm.jpg",
-          src: "../assets/img/portfolio/shop.jpg",
+          thumb: "/portfolio/shop_sm.jpg",
+          src: "/portfolio/shop.jpg",
           caption: "Shop",
         },
         {
-          thumb: "../assets/img/portfolio/table_sm.jpg",
-          src: "../assets/img/portfolio/table.jpg",
+          thumb: "/portfolio/table_sm.jpg",
+          src: "/portfolio/table.jpg",
           caption: "Table",
         },
         {
-          thumb: "../assets/img/portfolio/unicorn_planter_sm.jpg",
-          src: "../assets/img/portfolio/unicorn_planter.jpg",
+          thumb: "/portfolio/unicorn_planter_sm.jpg",
+          src: "/portfolio/unicorn_planter.jpg",
           caption: "Unicorn Planter",
         },
         {
-          thumb: "../assets/img/portfolio/valentin_mug_sm.jpg",
-          src: "../assets/img/portfolio/valentin_mug.jpg",
+          thumb: "/portfolio/valentin_mug_sm.jpg",
+          src: "/portfolio/valentin_mug.jpg",
           caption: "Valentin Mug",
         },
         {
-          thumb: "../assets/img/portfolio/valentina_address_book_sm.jpg",
-          src: "../assets/img/portfolio/valentina_address_book.jpg",
+          thumb: "/portfolio/valentina_address_book_sm.jpg",
+          src: "/portfolio/valentina_address_book.jpg",
           caption: "Valentina Address Book",
         },
         {
-          thumb: "../assets/img/portfolio/watercolor_sm.jpg",
-          src: "../assets/img/portfolio/watercolor.jpg",
+          thumb: "/portfolio/watercolor_sm.jpg",
+          src: "/portfolio/watercolor.jpg",
           caption: "Watercolor",
         },
         {
-          thumb: "../assets/img/portfolio/wrapping_paper_sm.jpg",
-          src: "../assets/img/portfolio/wrapping_paper.jpg",
+          thumb: "/portfolio/wrapping_paper_sm.jpg",
+          src: "/portfolio/wrapping_paper.jpg",
           caption: "Wrapping Paper",
         },
         {
-          thumb: "../assets/img/portfolio/you_got_this_sm.jpg",
-          src: "../assets/img/portfolio/you_got_this.jpg",
+          thumb: "/portfolio/you_got_this_sm.jpg",
+          src: "/portfolio/you_got_this.jpg",
           caption: "You Got This",
         },
       ]
@@ -292,48 +290,80 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  @import "../assets/css/gallery.scss";
-
-  aside {
-    margin-top: 0 !important;
-  }
-  .vue-lb-info {
-    padding-top: 0.6rem !important;
-  }
-
-  body.portfolio section.twoCol {
-    grid-column: 1 / span 11;
-    // background: red;
-
-    @include breakpoint($SmMdLg) {
-      // grid-column: 2 / span 9;
-    }
-
-    @include breakpoint($sm) {
-      // grid-column: 2 / span 9;
-    }
-  }
+<style lang="scss">
+  // @import "../assets/css/gallery";
+  @import "@/assets/css/vendor/vue-lightbox";
 
   .portfolio main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-column: 3 / span 9;
-    grid-row: 4;
+    grid-column: 2 / span 10;
+    grid-row: initial;
     grid-auto-flow: row;
-    max-width: 1000px;
-    // margin: auto;
+    max-width: 100%;
+    max-width: 1080px;
+    width: 100%;
+    margin: auto;
 
     @include breakpoint($SmMdLg) {
-      // grid-column: 2 / span 11;
+      grid-column: 2 / span 10 !important;
+      // width: 100%;
+    }
+
+    aside.col3 {
+      grid-column: initial;
     }
   }
 
-  .flex {
-    display: flex;
-    width: 100%;
+  .portfolio section.twoCol {
+    grid-column: 2 / span 9;
+    // background: red;
+
+    @include breakpoint($SmMdLg) {
+      grid-column: 1 / span 11;
+    }
+
+    @include breakpoint($sm) {
+      grid-column: 1 / span 11;
+    }
   }
-  .flex img {
-    max-width: 100px;
+
+  .portfolio section.twoCol > div {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    gap: 1rem;
+    // background: red !important;
+
+    @include breakpoint($SmMdLg) {
+      // flex-basis: 21%;
+      // background: red;
+    }
+
+    @include breakpoint($SmMd) {
+      // flex-basis: 43%;
+      // background: green;
+    }
+
+    @include breakpoint($mdlg) {
+      // flex-basis: 30%;
+      // background: purple;
+    }
+
+    @include breakpoint($sm) {
+      flex-basis: 100%;
+      // background: blue;
+    }
+
+    img {
+      margin-bottom: -4px;
+    }
+  }
+
+  aside {
+    margin-top: 0 !important;
+  }
+
+  .vue-lb-info {
+    bottom: 22px !important;
   }
 </style>
