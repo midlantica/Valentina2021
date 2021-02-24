@@ -151,7 +151,7 @@ textarea {
   margin: 0.5em 0 0 0;
   letter-spacing: 0.05em;
   padding: 2px 0 2px 0;
-  @include border-radius(6px);
+  border-radius: 6px;
 }
 
 #contactForm button:hover {

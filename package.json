@@ -28,7 +28,6 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "breakpoint-sass": "^2.7.1",
-    "compass-mixins": "^0.12.10",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^7.6.0",
     "fibers": "^5.0.0",

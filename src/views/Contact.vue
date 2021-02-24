@@ -112,9 +112,6 @@
     margin-bottom: 3em;
 
     .formInput {
-      // padding: 0;
-      // margin: 0;
-      // min-height: 2em;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -122,10 +119,6 @@
       align-content: flex-start;
       flex-grow: 1;
       padding-top: 0.75em;
-      // margin-bottom: 3em;
-      // flex-basis: 100%;
-      // flex-grow: 1;
-      // flex-shrink: 1;
 
       // &:nth-of-type(3) {
       //   padding: 0;
@@ -203,7 +196,7 @@
         padding: 0 0 0 0.3em;
         outline: none;
         flex-basis: 70%;
-        @include border-radius(6px);
+        border-radius: 6px;
 
         @include breakpoint($SmMd) {
           flex-basis: 100%;
@@ -224,8 +217,6 @@
 
       button {
         background: $orange;
-        // display: block;
-        // width: 80px;
         border: none;
         font-family: $copy;
         color: white;
@@ -233,7 +224,7 @@
         letter-spacing: 0.05em;
         padding: 0.25em 0.5em 0.25em 0.5em;
         cursor: pointer;
-        @include border-radius(6px);
+        border-radius: 6px;
         @include clearfix;
 
         &:hover {

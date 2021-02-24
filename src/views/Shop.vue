@@ -57,13 +57,8 @@
 
     a {
       flex-basis: 30%;
-      // @include span-columns(3 of 9);
-      // @include omega(3n);
       background: $beige;
       margin-bottom: 1em;
-      // height: 180px;
-      // width: 100%;
-      // @include box-shadow($grey 0px 2px 6px -2px);
       border-radius: 2px;
       border: 1px solid $greyLightest;
 

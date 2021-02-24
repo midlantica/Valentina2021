@@ -1,8 +1,8 @@
 // VENDOR SASS
 @import "./colors.scss";
-
-@import "../../../node_modules/compass-mixins/lib/compass";
+@import "mixins";
 @import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+// @import "utilities/__utilities_base.scss";
 // @import '../css/vendor/html5Boilerplate';
 // @import '../css/vendor/normalize';
 
@@ -48,7 +48,7 @@ body {
 // ########################
 // link colors
 a {
-  @include link-colors($purple, $orange, $purple, $purple, $purple);
+  // @include link-colors($purple, $orange, $purple, $purple, $purple);
   text-decoration: none;
   border-bottom: 1px dotted #b9d54a;
 }
