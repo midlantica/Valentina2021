@@ -1,6 +1,6 @@
 <template>
   <div class="centerContent">
-    <router-link to="ArtistStatement">
+    <router-link :to="{ name: 'ArtistStatement' }">
       <img class="valPic" src="../assets/img/Valentina_Harper.jpg" />
       <p class="statement">See Artist's Statement</p>
     </router-link>

@@ -1,8 +1,8 @@
 // VENDOR SASS
-@import './colors.scss';
+@import "./colors.scss";
 
-@import '../../../node_modules/compass-mixins/lib/compass';
-@import '../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import "../../../node_modules/compass-mixins/lib/compass";
+@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 // @import '../css/vendor/html5Boilerplate';
 // @import '../css/vendor/normalize';
 
@@ -14,29 +14,30 @@ $base-font: 1.15em;
 
 // BREAKPOINTS
 // $xsm:   0px 320px;
-$sm:    0px 479px;
-$md:    480px 759px;
-$mdlg:  760px 944px;
-$bg:    min-width 945px;
+$sm: 0px 479px;
+$md: 480px 759px;
+$mdlg: 760px 944px;
+$bg: min-width 945px;
 //
-$SmMd:  0px 759px;
-$SmMdLg:  0px 944px;
+$SmMd: 0px 759px;
+$SmMdLg: 0px 944px;
 
-$mobileXMini:   max-width 360px;
-$mobileMini:    min-width 660px;
-$mobile:        min-width 760px;
-$med-width:     min-width 860px;
+$mobileXMini: max-width 360px;
+$mobileMini: min-width 660px;
+$mobile: min-width 760px;
+$med-width: min-width 860px;
 
 // FONTS
-$base-font-size:    0.85em;
-$base-line-height:  1.7em;
-$header-font:       witchedregular;
-$copy:              Register;
-$copy-bold:         RegisterBold;
+$base-font-size: 0.85em;
+$base-line-height: 1.7em;
+$header-font: witchedregular;
+$copy: Register;
+$copy-bold: RegisterBold;
 
 // ############################
 
-html, html a {
+html,
+html a {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -47,16 +48,7 @@ body {
 // ########################
 // link colors
 a {
-  @include link-colors
-  ($purple,
-   $orange,
-   $purple,
-   $purple,
-   $purple);
-   text-decoration: none;
-   border-bottom: 1px dotted #b9d54a;
+  @include link-colors($purple, $orange, $purple, $purple, $purple);
+  text-decoration: none;
+  border-bottom: 1px dotted #b9d54a;
 }
-
-
-
-

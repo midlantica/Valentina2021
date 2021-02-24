@@ -1,11 +1,9 @@
-
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 a {
-  @include link-colors(
-    $normal:  $link-color,
-    $visited: $link-color,
-    $hover:   $purple);
+  @include link-colors($normal: $link-color, $visited: $link-color, $hover: $purple);
 }
 
 @mixin shadow {
@@ -25,25 +23,29 @@ a {
   @if type-of($box-model) == string {
     $box-model: unquote($box-model);
   }
-  @include prefixed-properties(css3-boxsizing, $box-sizing-support-threshold, (box-sizing: $box-model));
+  @include prefixed-properties(
+    css3-boxsizing,
+    $box-sizing-support-threshold,
+    (
+      box-sizing: $box-model,
+    )
+  );
 }
 
-
-@mixin circle ($diameter){
+@mixin circle($diameter) {
   width: $diameter;
   height: $diameter;
-  border-radius: $diameter /2;
+  border-radius: $diameter / 2;
 }
 
 %shadow {
   @include box-shadow(black 2px 2px 4px);
 }
 
-
 .floatLeft {
-    float: left;
+  float: left;
 }
 
 .floatRight {
-    float:right;
+  float: right;
 }

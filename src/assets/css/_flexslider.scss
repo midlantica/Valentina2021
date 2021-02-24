@@ -9,11 +9,11 @@
   @include shadow;
   @include clearfix;
   width: span(95%);
-  margin: 0 0 .75em 0em;
+  margin: 0 0 0.75em 0em;
 
   @include breakpoint($sm) {
     width: span(95%);
-    margin-left: .4em;
+    margin-left: 0.4em;
   }
 
   @include breakpoint($md) {
@@ -23,14 +23,13 @@
   @include breakpoint($bg) {
     // margin: 0 0 .75em 0em;
   }
-
 }
 
 .flexslider {
   //
   .about,
   .quote {
-    margin-left: .5em;
+    margin-left: 0.5em;
   }
 }
 

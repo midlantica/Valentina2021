@@ -3,7 +3,7 @@
     <headerTop />
     <Navvy />
     <router-view v-slot="{ Component }">
-      <transition>
+      <transition name="fade">
         <keep-alive>
           <component :is="Component" />
         </keep-alive>

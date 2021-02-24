@@ -1,6 +1,6 @@
 <template>
   <header>
-    <router-link to="/" title="home">
+    <router-link :to="{ name: 'Home' }" title="home">
       <div class="headerArt" />
     </router-link>
   </header>

@@ -23,7 +23,7 @@ body:after {
   .col1,
   .col2 {
     width: span(1 of 2);
-    margin-top: .5em;
+    margin-top: 0.5em;
     padding-left: 0em;
 
     @include breakpoint($sm) {
@@ -51,7 +51,7 @@ body:after {
     text-align: center;
     margin-bottom: 1.5em;
     margin-top: 0.5em;
-    font-size: .85em;
+    font-size: 0.85em;
   }
 }
 

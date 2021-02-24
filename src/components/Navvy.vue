@@ -1,26 +1,26 @@
 <template>
   <nav class="mainNav">
-    <router-link to="/" title="home">
+    <router-link :to="{ name: 'Home' }" title="home">
       <div class="navBtns homeBtn">home</div>
     </router-link>
 
-    <router-link to="/Portfolio" title="Portfolio">
+    <router-link :to="{ name: 'Portfolio' }" title="Portfolio">
       <div class="navBtns portfolioBtn">portfolio</div>
     </router-link>
 
-    <router-link to="/Shop" title="Shop">
+    <router-link :to="{ name: 'Shop' }" title="Shop">
       <div class="navBtns shopBtn">shop</div>
     </router-link>
 
-    <router-link to="/Licensing" title="Licensing">
+    <router-link :to="{ name: 'Licensing' }" title="Licensing">
       <div class="navBtns licensingBtn">licensing</div>
     </router-link>
 
-    <router-link to="/Wholesale" title="Wholesale">
+    <router-link :to="{ name: 'Wholesale' }" title="Wholesale">
       <div class="navBtns wholesaleBtn marLH">wholesale</div>
     </router-link>
 
-    <router-link to="/Contact" title="Contact">
+    <router-link :to="{ name: 'contact' }" title="Contact">
       <div class="navBtns contactBtn marLH">contact</div>
     </router-link>
   </nav>
@@ -223,7 +223,7 @@
 
   // ############################
   // UPSTATES ON INDIVIDUAL PAGES
-  body.index .homeBtn {
+  body.home .homeBtn {
     // background-image: url(../assets/img/buttons/home_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
     background-position-x: 0px;

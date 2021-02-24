@@ -9,8 +9,8 @@
   font-family: Register;
   // font-size: 1em;
   height: auto;
-  display:block;
-  background-image:none;
+  display: block;
+  background-image: none;
   display: block;
   @include clearfix;
   margin: 0 0 2em;
@@ -31,22 +31,21 @@
   background-image: none;
   display: inline;
   list-style-type: none;
-  padding: .25em .5em ;
+  padding: 0.25em 0.5em;
   margin: 0 1em 1em 0;
   text-align: center;
 
   // @include breakpoint($mobile)
-  .xxx  {
-    font-size: .8em;
+  .xxx {
+    font-size: 0.8em;
     margin: 0 0em 1em;
   }
-
 }
 
 .nav_gall li a {
-  color: darken($green,20);
+  color: darken($green, 20);
   // color: $green;
-  padding:.2em 0;
+  padding: 0.2em 0;
   border-bottom: 2px dotted $orange;
   margin: 0 0 2em 0;
 }
@@ -66,4 +65,3 @@
 .patterns .nav_gall li.patt_art a {
   color: $grey;
 }
-

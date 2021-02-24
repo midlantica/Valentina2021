@@ -2,7 +2,7 @@
   <main>
     <aside class="col1">
       <div class="centerContent">
-        <router-link to="/" title="home">
+        <router-link :to="{ name: 'Home' }" title="home">
           <img class="valPic" src="../assets/img/Valentina_Harper.jpg" />
           <p class="statement">＜ back</p>
         </router-link>

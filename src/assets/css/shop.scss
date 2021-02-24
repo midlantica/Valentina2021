@@ -42,7 +42,6 @@ main.shop {
         // background: transparentize($orange,.5);
 
         @include breakpoint($mobile) {
-
         }
 
         img {
@@ -57,10 +56,5 @@ main.shop {
         }
       }
     }
-
   }
 }
-
-
-
-

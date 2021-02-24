@@ -5,7 +5,7 @@ import Portfolio from "../views/Portfolio"
 import Shop from "../views/Shop"
 import Licensing from "../views/Licensing"
 import Wholesale from "../views/Wholesale"
-import Contact from "../views/Contact"
+import contact from "../views/contact"
 import thankyou from "../views/thankyou"
 import NotFound from "../views/NotFound"
 import VueBodyClass from "vue-body-class"
@@ -16,7 +16,7 @@ const routes = [
     name: "Home",
     component: Home,
     meta: {
-      bodyClass: "index",
+      bodyClass: "home",
       title: "Valentina Design | Valentina Art - Inspired and Inspirational",
       metaTags: [
         // {
@@ -106,9 +106,9 @@ const routes = [
     },
   },
   {
-    path: "/Contact",
-    name: "Contact",
-    component: Contact,
+    path: "/contact",
+    name: "contact",
+    component: contact,
     meta: {
       bodyClass: "contact",
       title: "Valentina Design | Valentina Art - Inspired and Inspirational",
