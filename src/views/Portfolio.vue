@@ -291,7 +291,6 @@
 </script>
 
 <style lang="scss">
-  // @import "../assets/css/gallery";
   @import "@/assets/css/vendor/vue-lightbox";
 
   .portfolio main {
@@ -361,9 +360,5 @@
 
   aside {
     margin-top: 0 !important;
-  }
-
-  .vue-lb-info {
-    bottom: 22px !important;
   }
 </style>

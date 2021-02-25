@@ -1,16 +1,10 @@
 // VENDOR SASS
-@import "./colors.scss";
+@import "colors";
 @import "mixins";
 @import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
-// @import "utilities/__utilities_base.scss";
+@import "utilities/__utilities_base.scss";
 // @import '../css/vendor/html5Boilerplate';
 // @import '../css/vendor/normalize';
-
-// MORTAR
-$padding: 1em;
-$margin: 1em;
-$line-height: 2em;
-$base-font: 1.15em;
 
 // BREAKPOINTS
 // $xsm:   0px 320px;
@@ -39,16 +33,44 @@ $copy-bold: RegisterBold;
 html,
 html a {
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 }
 
 body {
   font-size: 1rem;
 }
 
+audio,
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 // ########################
 // link colors
 a {
-  // @include link-colors($purple, $orange, $purple, $purple, $purple);
+  color: $purple;
   text-decoration: none;
-  border-bottom: 1px dotted #b9d54a;
+  border-bottom: 1px dotted $green;
+  // @include link-colors($purple, $orange, $purple, $purple, $purple);
+
+  &:hover {
+    color: $purple;
+  }
+  &:active {
+    color: $orange;
+  }
+  &:visited {
+    color: $purple;
+  }
+  &:focus {
+    color: $purple;
+  }
 }

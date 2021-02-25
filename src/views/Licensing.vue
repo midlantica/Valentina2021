@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="twoCol">
-      <p class="marTH">
+      <p class="marT0">
         I collaborate with companies across a variety of industries to create product lines.
       </p>
       <p>
