@@ -1,16 +1,15 @@
 <template>
   <main>
-    <aside>
-      <div class="centerContent">
-        <router-link :to="{ name: 'Home' }" title="home">
-          <img class="valPic" src="../assets/img/Valentina_Harper.jpg" />
-          <p class="statement">＜ back</p>
-        </router-link>
+    <section>
+      <div class="flexxy">
+        <div class="valImgDiv">
+          <router-link :to="{ name: 'Home' }" title="home">
+            <img class="valPic" src="../assets/img/Valentina_Harper.jpg" />
+            <p class="statement">＜ back</p>
+          </router-link>
+        </div>
+        <Statement />
       </div>
-    </aside>
-
-    <section class="home">
-      <Statement />
     </section>
 
     <aside>
@@ -35,33 +34,15 @@
     border-bottom: none;
   }
 
-  .valPic {
-    // margin-top: 0.3em;
-    border-radius: 20em;
-    // @include clearfix;
-
-    @include breakpoint($SmMdLg) {
-      width: 50%;
-      // @include span-columns(6 of 10);
-      // @include shift(2);
-      // margin-right: 2em;
-      // @include clearfix;
-    }
-  }
-
   .statement {
     font-size: 1em;
     text-align: center;
-    // float: none;
     margin-top: 0.4em;
     font-weight: bold;
-    // @include clearfix;
 
     @include breakpoint($mobile) {
       display: block;
       margin-bottom: 0;
-      // @include clearfix;
-      // clear: both;
     }
   }
 

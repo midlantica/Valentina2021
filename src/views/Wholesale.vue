@@ -3,7 +3,7 @@
     <section>
       <p class="largeCopy">Thanks for your interest in carrying my products.</p>
 
-      <h3 class="marT0 marBH marT1">Prints</h3>
+      <h3 class="marT1H marBH">Prints</h3>
       <p>
         You can order prints at
         <a href="http://www.valentinaharper.com" target="_blank">ValentinaHarper.com</a>. If you
@@ -12,7 +12,7 @@
         with your name, email, and shop information and I will send a Wholesale discount code to
         shop.
       </p>
-      <h3 class="marBH marT1">Wholesale info:</h3>
+      <h3 class="marT1H marBH">Wholesale info:</h3>
       <ul>
         <li><b>PACKING:</b> Each print come in a cello bag with a chipboard backing</li>
         <li><b>WHOLESALE PRICING:</b> $7.5 each (8x10 inches) print</li>
@@ -24,7 +24,7 @@
         </li>
       </ul>
 
-      <h3 class="marBH marT1">Home Decor</h3>
+      <h3 class="marT1H marBH">Home Decor</h3>
       <p>
         If you are interested in ordering duvet covers, pillow cases, shower curating, trays, and
         other decor products, visit
@@ -34,7 +34,7 @@
         to get the wholesale information.
       </p>
 
-      <h3 class="marBH marT1">Coloring Books</h3>
+      <h3 class="marT1H marBH">Coloring Books</h3>
       <p>
         You can order my coloring books at
         <a href="http://www.foxchapelb2b.com" target="_blank">Fox Chapel Publishing</a>.
@@ -77,7 +77,7 @@
   h3,
   h4,
   h5 h6 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
   }
 </style>

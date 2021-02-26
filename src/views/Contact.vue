@@ -83,6 +83,15 @@
 
   #contactForm {
     margin-bottom: 3em;
+    max-width: 500px;
+
+    @include breakpoint($SmMd) {
+      max-width: 450px;
+    }
+
+    @include breakpoint($sm) {
+      max-width: 400px;
+    }
 
     .formInput {
       display: flex;
@@ -104,7 +113,7 @@
             margin-left: 0;
           }
 
-          @include breakpoint($md) {
+          @include breakpoint($sm) {
             margin-left: 0em;
           }
         }

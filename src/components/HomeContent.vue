@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="valCopy">
     <h2>Welcome to Valentina's world</h2>
     <p>
       <b>After 15 years working as a graphic designer, Valentina Harper (formerly Ramos)</b> started

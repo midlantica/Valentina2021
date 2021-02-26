@@ -51,9 +51,11 @@ li {
   }
 }
 
-.delinky {
-  margin: 0;
-  a {
-    border: none;
+.valPic {
+  border-radius: 20em;
+  text-align: center;
+
+  @include breakpoint($SmMdLg) {
+    // width: 100%;
   }
 }

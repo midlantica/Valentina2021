@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="valCopy">
     <h2>Artist’s&nbsp;Statement</h2>
     <p>
       “My work is primarily driven by the idea of the creation of a unified whole through the use of
@@ -16,6 +16,6 @@
 
 <style lang="scss" scoped>
   h2 {
-    clear: both !important;
+    // clear: both !important;
   }
 </style>

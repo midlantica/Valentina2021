@@ -312,12 +312,13 @@
     }
 
     @include breakpoint($sm) {
-      flex-basis: 100%;
+      text-align: center;
       // background: blue;
     }
 
     img {
-      // margin-bottom: -0px;
+      border: 1px solid hsl(42, 12%, 84%);
+      margin-bottom: -4px;
       border-radius: 0.5rem;
     }
   }

@@ -32,6 +32,7 @@
     flex-flow: row wrap;
     justify-content: center;
     z-index: 10;
+    // margin: auto;
 
     a {
       font-family: $header-font;
@@ -42,17 +43,17 @@
       margin: 0 0em;
       border-bottom: none;
       align-self: center;
-    }
 
-    @include breakpoint($SmMd) {
-      font-family: $copy;
-      font-size: 0.775em;
-      width: initial;
-      height: initial;
-      margin: 0 0em;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      // background: pink; ///////////// ------>>>>>>>
+      @include breakpoint($SmMd) {
+        font-family: $copy;
+        font-size: 0.85em;
+        width: initial;
+        height: initial;
+        // margin: 0 0em;
+        text-transform: capitalize;
+        letter-spacing: 0.1em;
+        // background: pink; ///////////// ------>>>>>>>
+      }
     }
   }
 

@@ -1,8 +1,10 @@
 <template>
   <main>
     <section>
-      <Bio />
-      <HomeContent />
+      <div class="flexxy">
+        <Bio />
+        <HomeContent />
+      </div>
     </section>
 
     <aside>
