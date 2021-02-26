@@ -1,10 +1,10 @@
 <template>
   <main>
-    <section class="twoCol">
+    <section>
       <ImageBox image-list-class="reddy" :images="images" />
     </section>
 
-    <aside class="col3">
+    <aside>
       <Social />
     </aside>
   </main>
@@ -293,58 +293,21 @@
 <style lang="scss">
   @import "@/assets/css/vendor/vue-lightbox";
 
-  .portfolio main {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 2 / span 10;
-    grid-row: initial;
-    grid-auto-flow: row;
-    max-width: 100%;
-    max-width: 1080px;
-    width: 100%;
-    margin: auto;
-
-    @include breakpoint($SmMdLg) {
-      grid-column: 2 / span 10 !important;
-      // width: 100%;
-    }
-
-    aside.col3 {
-      grid-column: initial;
-    }
-  }
-
-  .portfolio section.twoCol {
-    grid-column: 2 / span 9;
-    // background: red;
-
-    @include breakpoint($SmMdLg) {
-      grid-column: 1 / span 11;
-    }
-
-    @include breakpoint($sm) {
-      grid-column: 1 / span 11;
-    }
-  }
-
-  .portfolio section.twoCol > div {
+  .portfolio section > div {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
     gap: 1rem;
     // background: red !important;
 
     @include breakpoint($SmMdLg) {
-      // flex-basis: 21%;
       // background: red;
     }
 
     @include breakpoint($SmMd) {
-      // flex-basis: 43%;
       // background: green;
     }
 
     @include breakpoint($mdlg) {
-      // flex-basis: 30%;
       // background: purple;
     }
 
@@ -354,11 +317,8 @@
     }
 
     img {
-      margin-bottom: -4px;
+      // margin-bottom: -0px;
+      border-radius: 0.5rem;
     }
-  }
-
-  aside {
-    margin-top: 0 !important;
   }
 </style>

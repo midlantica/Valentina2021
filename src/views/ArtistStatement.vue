@@ -1,6 +1,6 @@
 <template>
   <main>
-    <aside class="col1">
+    <aside>
       <div class="centerContent">
         <router-link :to="{ name: 'Home' }" title="home">
           <img class="valPic" src="../assets/img/Valentina_Harper.jpg" />
@@ -13,7 +13,7 @@
       <Statement />
     </section>
 
-    <aside class="col3 marT2">
+    <aside>
       <Social />
     </aside>
   </main>

@@ -85,14 +85,16 @@ img.vue-lb-modal-image {
 .vue-lb-info {
   visibility: initial;
   position: absolute;
-  bottom: 22px !important;
+  bottom: 27px !important;
   color: white;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1);
   height: 40px;
   width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   padding: 0.5rem;
+  border-bottom-left-radius: 0.45rem;
+  border-bottom-right-radius: 0.45rem;
 }
 
 .vue-lb-footer {

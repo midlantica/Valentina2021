@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="twoCol">
+    <section>
       <p class="largeCopy">Thanks for your interest in carrying my products.</p>
 
       <h3 class="marT0 marBH marT1">Prints</h3>
@@ -41,7 +41,7 @@
       </p>
     </section>
 
-    <aside class="col3">
+    <aside>
       <Social />
     </aside>
   </main>

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="twoCol">
+    <section>
       <p class="marT0">
         I collaborate with companies across a variety of industries to create product lines.
       </p>
@@ -16,7 +16,7 @@
       </p>
     </section>
 
-    <aside class="col3">
+    <aside>
       <Social />
     </aside>
   </main>
@@ -31,5 +31,5 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 </style>

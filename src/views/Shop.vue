@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="shop">
+    <section>
       <a href="http://www.valentinaharper.com/" target="_blank">
         <img src="../assets/img/shop/prints.jpg" alt="Prints" />
         <p>Prints</p>
@@ -29,7 +29,7 @@
         <p>Wall Decal</p>
       </a>
     </section>
-    <aside class="col3">
+    <aside>
       <Social />
     </aside>
   </main>
@@ -45,9 +45,7 @@
 </script>
 
 <style lang='scss' scoped>
-  section.shop {
-    // @include clearfix;
-    max-width: 1000px;
+  section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,6 +59,8 @@
       margin-bottom: 1em;
       border-radius: 2px;
       border: 1px solid $greyLightest;
+      border-radius: 0.5rem;
+      border-radius: 0.5rem;
 
       @include breakpoint($SmMdLg) {
         flex-basis: 40%;
@@ -73,8 +73,8 @@
       img {
         width: 100%;
         height: calc(100% - 2.5rem);
-        border-top-left-radius: 2px;
-        border-top-right-radius: 2px;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
       }
       p {
         margin: 0.5em auto;
@@ -82,33 +82,5 @@
         text-align: center;
       }
     }
-  }
-
-  aside {
-    // @include span-columns(1);
-    // @include omega();
-  }
-
-  .socialIconsBox {
-    // margin-top: .5em !important;
-    margin-left: 1rem;
-  }
-
-  .shop main {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 3 / span 8;
-    grid-row: 4;
-    grid-auto-flow: row;
-    max-width: 1000px;
-    // margin: auto;
-
-    @include breakpoint($mdlg) {
-      grid-column: 2 / span 10;
-    }
-
-    // @include breakpoint($SmMdLg) {
-    //   grid-column: 2 / span 10;
-    // }
   }
 </style>

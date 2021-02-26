@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="contactContent">
+    <section>
       <h2>Send an email</h2>
       <p>
         <a href="mailto:valentina@valentinadesign.com">valentina@valentinadesign.com</a>
@@ -45,7 +45,7 @@
       <!-- End myContactForm.com Form HTML -->
     </section>
 
-    <aside class="col3 marT3">
+    <aside>
       <Social />
     </aside>
   </main>
@@ -62,50 +62,23 @@
 </script>
 
 <style lang="scss" scoped>
-  main {
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
-    grid-column: 3 / span 8 !important;
-    // background: lightgrey;
-
-    aside.col1 {
-      grid-column: 1 / span 5;
-      background-image: url(../assets/img/contact_bird.png);
-      background-repeat: no-repeat;
-      background-position: -60px 00px;
-      // background: LightPink;
-
-      @include breakpoint($SmMdLg) {
-        display: none;
-        background-image: none;
-      }
-    }
-
-    section.contactContent {
-      // See layout.scss
-    }
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
   }
 
-  section.contactContent {
-    //
-    h2 {
-      font-size: 1.2em;
-      margin-bottom: 0.2em;
-    }
+  h3 {
+    font-size: 1em;
+    margin: 1.5em 0 0.25em;
+  }
 
-    h3 {
-      font-size: 1em;
-      margin: 1.5em 0 0.25em;
-    }
-
-    p {
-      // font-family: Register;
-      color: $grey;
-      font-size: 1em;
-      letter-spacing: 0.065em;
-      margin: 0 0.5em 0 0;
-      padding: 0;
-    }
+  p {
+    // font-family: Register;
+    color: $grey;
+    font-size: 1em;
+    letter-spacing: 0.065em;
+    margin: 0 0.5em 0 0;
+    padding: 0;
   }
 
   #contactForm {
@@ -120,21 +93,12 @@
       flex-grow: 1;
       padding-top: 0.75em;
 
-      // &:nth-of-type(3) {
-      //   padding: 0;
-      //   margin: 0;
-      //   height: 60px;
-      // }
-
       &:nth-of-type(4) {
         display: flex;
         flex-direction: column;
 
         button {
-          // order: 1;
           margin: 0.5em 0em 0 4em;
-          // flex-shrink: 1;
-          // align-self: flex-start;
 
           @include breakpoint($SmMd) {
             margin-left: 0;
@@ -181,6 +145,7 @@
         align-items: flex-start;
         // flex-basis: 60%;
         // flex-grow: 1;
+        background: #fffbf2;
       }
 
       input,
@@ -192,7 +157,7 @@
         border: 1px dashed $purple;
         // margin: .5em 0 0 0;
         // width: 100%;
-        background: tint(orange, 95%);
+        background: #fffbf2;
         padding: 0 0 0 0.3em;
         outline: none;
         flex-basis: 70%;
@@ -209,10 +174,6 @@
 
       textarea {
         padding: 0.3em 0 0 0.3em;
-
-        // @include breakpoint($SmMd) {
-        //   flex-basis: 60%;
-        // }
       }
 
       button {

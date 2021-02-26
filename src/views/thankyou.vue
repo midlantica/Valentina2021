@@ -1,10 +1,10 @@
 <template>
   <main>
-    <section class="twoCol">
+    <section>
       <h2>Thanks!</h2>
       <p>Your information was submitted successfully.</p>
     </section>
-    <aside class="col3">
+    <aside>
       <Social />
     </aside>
   </main>

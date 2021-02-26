@@ -1,33 +1,31 @@
 html {
-  // background: red;
-  height: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
+  // background: red;
 }
 
 body {
   background: $purple;
   padding: 0;
   margin: 0;
-
-  // @include breakpoint($SmMdLg) {
-  //   background: $white;
-  //   padding: 0;
-  //   margin: 0;
-  // }
+  height: 100vh;
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  // max-width: 1450px;
-  // grid-template-rows: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  //
   background-repeat: repeat-y;
   background-position: center top;
   margin: -1px auto 0px;
   padding: 0 0 10px 0;
-  background-image: url("./assets/img/white_back_patt.png");
-  max-width: 1550px;
+  background-image: url("assets/img/white_back_patt.png");
 
   @include breakpoint($SmMdLg) {
     background: $white;
@@ -36,128 +34,58 @@ body {
 
 header,
 footer {
-  grid-column: 2 / span 10;
-
-  @include breakpoint($SmMdLg) {
-    grid-column: 1 / span 12;
-  }
-}
-
-header {
-  grid-row: 1;
-}
-
-footer {
-  grid-row: 5;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  margin: auto;
 }
 
 nav {
-  grid-column: 2 / span 10;
-  margin-top: -3em;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: -4em;
   margin-bottom: 2em;
 
   @include breakpoint($SmMdLg) {
-    grid-column: 2 / span 10;
     margin-top: -1.5em;
-    // margin-bottom: 1em;
   }
 }
-
-.nav_gall {
-  grid-column: 4 / span 6;
-  grid-row: 3;
-}
-
-// ###########################
-// ###########################
 
 main {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column: 3 / span 8;
-  grid-row: 4;
-  grid-auto-flow: row;
-  max-width: 1000px;
-  width: 100%;
+  grid-template-columns: 1fr 5rem;
   margin: auto;
+  width: 70vw;
+  max-width: 850px;
 
   @include breakpoint($SmMdLg) {
-    grid-column: 2 / span 10;
+    // width: 80vw;
+  }
+
+  @include breakpoint($SmMd) {
+    width: 80vw;
   }
 
   aside.col1 {
-    grid-column: 1 / span 3;
+    //
 
     @include breakpoint($SmMdLg) {
-      grid-column: 1 / span 12;
-      margin: 1em 0;
-    }
-  }
-
-  // Home
-  section.home {
-    grid-column: span 8;
-    padding: 0 1em 0 1em;
-
-    @include breakpoint($SmMdLg) {
-      grid-column: span 11;
-      padding: 0 1em 0 0em;
-    }
-
-    @include breakpoint($sm) {
-      grid-column: 1 / span 11;
-    }
-  }
-
-  // 2 Columns
-  section.shop {
-    grid-column: 1 / span 12;
-
-    @include breakpoint($SmMdLg) {
-      // grid-column: 2 / span 10;
-    }
-
-    @include breakpoint($sm) {
-      // grid-column: 2 / span 10;
-    }
-  }
-
-  section.twoCol {
-    grid-column: 3 / span 9;
-
-    @include breakpoint($SmMdLg) {
-      // grid-column: 2 / span 10;
-    }
-
-    @include breakpoint($sm) {
-      // grid-column: 2 / span 10;
-    }
-  }
-
-  section.contactContent {
-    grid-column: 4 / span 7;
-    // background: DarkSeaGreen;
-
-    @include breakpoint($SmMdLg) {
-      grid-column: 1 / span 11;
-    }
-
-    @include breakpoint($sm) {
-      grid-column: 1 / span 11;
-    }
-  }
-
-  // 3rd Column - Social Icons
-  aside.col3 {
-    grid-column: -1;
-
-    @include breakpoint($sm) {
       //
     }
   }
 }
 
-body.contact aside.col3 {
-  grid-column: -1;
-  // background: red;
+body.licensing main,
+body.wholesale main {
+  padding-left: 3rem;
+}
+
+body.contact main {
+  padding-left: 6rem;
+}
+
+.centerContent {
+  text-align: center;
+  @include clearfix;
 }

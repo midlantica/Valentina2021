@@ -1,14 +1,11 @@
 <template>
   <main>
-    <aside class="col1">
+    <section>
       <Bio />
-    </aside>
-
-    <section class="home">
       <HomeContent />
     </section>
 
-    <aside class="col3 marT2">
+    <aside>
       <Social />
     </aside>
   </main>

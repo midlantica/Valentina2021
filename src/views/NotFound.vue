@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="twoCol">
+    <section>
       <h2>Error</h2>
       <p>This page does not exist</p>
     </section>

@@ -42,27 +42,17 @@
       margin: 0 0em;
       border-bottom: none;
       align-self: center;
+    }
 
-      // @include breakpoint($SmMdLg) {
-      //   font-family: $header-font;
-      //   // font-size: 2em;
-      //   margin: 0 .25em;
-      //   width: initial;
-      //   height: initial;
-      //   margin: 0;
-      //   // background: pink; ///////////// ------>>>>>>>
-      // }
-
-      @include breakpoint($SmMd) {
-        font-family: $copy;
-        font-size: 0.775em;
-        width: initial;
-        height: initial;
-        margin: 0 0em;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        // background: pink; ///////////// ------>>>>>>>
-      }
+    @include breakpoint($SmMd) {
+      font-family: $copy;
+      font-size: 0.775em;
+      width: initial;
+      height: initial;
+      margin: 0 0em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      // background: pink; ///////////// ------>>>>>>>
     }
   }
 
