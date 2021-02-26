@@ -26,10 +26,6 @@ const routes = [
       ],
     },
   },
-  // {
-  //   path: '*',
-  //   redirect: '/NotFound'
-  // },
   {
     path: "/ArtistStatement",
     name: "ArtistStatement",

@@ -29,15 +29,8 @@
     display: flex;
     float: right;
     flex-direction: column;
-    // flex-wrap: nowrap;
-    // justify-content: flex-end;
-    // align-items: flex-start;
-    // align-content: stretch;
-    // float: right;
     margin-left: 1rem;
     width: 40px;
-    // height: 250px;
-    // margin-top: .5em;
 
     a.socialIcon {
       width: 40px;
@@ -46,10 +39,7 @@
       background-repeat: no-repeat;
       padding: 0;
       margin-bottom: 0.5em;
-      // flex-basis: 1;
       border-bottom: none;
-      // flex-grow: 1;
-      // @include clearfix;
 
       &.facebook {
         background-image: url("../assets/img/icons/facebook.svg");
