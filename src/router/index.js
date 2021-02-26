@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router"
-import Home from "../views/Index"
+import Home from "../views/Home"
 import ArtistStatement from "../views/ArtistStatement"
 import Portfolio from "../views/Portfolio"
 import Shop from "../views/Shop"

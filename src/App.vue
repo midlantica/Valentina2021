@@ -2,13 +2,7 @@
   <div class="wrapper">
     <headerTop />
     <Navvy />
-    <router-view v-slot="{ Component }">
-      <!-- <transition name="fade"> -->
-      <keep-alive>
-        <component :is="Component" />
-      </keep-alive>
-      <!-- </transition> -->
-    </router-view>
+    <router-view />
     <Footy />
   </div>
 </template>
@@ -28,6 +22,5 @@
 </script>
 
 <style lang="scss">
-  // @import './node_modules/breakpoint-sass/stylesheets/breakpoint';
   @import "./assets/css/main.scss";
 </style>
