@@ -109,6 +109,11 @@
       text-decoration: none;
       border-bottom: none;
     }
+
+    .darkMode {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .homeBtn {
