@@ -14,10 +14,12 @@ body {
   height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background: $black;
-  }
+body[data-theme="light"] {
+  background: $purple;
+}
+
+body[data-theme="dark"] {
+  background: hsl(0deg 0% 9%);
 }
 
 .wrapper {
@@ -37,7 +39,12 @@ body {
 
   @include breakpoint($SmMdLg) {
     background: $white;
+    color: white;
   }
+}
+
+[data-theme="dark"] .wrapper {
+  background: none !important;
 }
 
 header,

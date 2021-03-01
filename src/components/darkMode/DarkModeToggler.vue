@@ -4,7 +4,7 @@
     @click="toggleTheme()"
     class="theme"
   >
-    <Moon :is="theme == 'dark' ? 'Moon' : 'Sun'" height="20px" />
+    <Moon :is="theme == 'dark' ? 'Moon' : 'Sun'" />
   </button>
 </template>
 
@@ -14,6 +14,7 @@
 
   export default {
     components: {
+
       Moon,
       Sun,
     },
@@ -37,3 +38,18 @@
     },
   }
 </script>
+
+<style lang="scss" scoped>
+  button {
+    cursor: pointer;
+    z-index: 100;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  [data-theme="dark"] button {
+    color: $black;
+  }
+</style>

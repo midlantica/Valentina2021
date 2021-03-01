@@ -297,6 +297,7 @@
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
     gap: 1rem;
+    cursor: pointer;
     // background: red !important;
 
     @include breakpoint($SmMdLg) {

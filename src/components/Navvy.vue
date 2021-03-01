@@ -116,6 +116,23 @@
     }
   }
 
+  [data-theme="dark"] .navBtns {
+    color: $green;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  [data-theme="dark"] .navBtns.shopBtn,
+  [data-theme="dark"] .navBtns.wholesaleBtn {
+    // color: $black !important;
+
+    &:hover {
+      color: $black !important;
+    }
+  }
+
   .homeBtn {
     padding-right: 0.5em;
     width: 100px;
@@ -278,6 +295,10 @@
     }
   }
 
+  [data-theme="dark"].shop .navBtns.shopBtn {
+    color: $black;
+  }
+
   body.licensing .licensingBtn {
     // background-image: url(../assets/img/buttons/shop_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
@@ -307,6 +328,10 @@
       border: 1px dotted $purple;
       border-radius: 0.5em;
     }
+  }
+
+  [data-theme="dark"].wholesale .navBtns.wholesaleBtn {
+    color: $black;
   }
 
   body.contact .contactBtn {

@@ -45,4 +45,12 @@
       padding-bottom: 57%;
     }
   }
+
+  [data-theme="dark"] .headerArt {
+    background-image: url(../assets/img/headerC_w.svg);
+
+    @include breakpoint($SmMdLg) {
+      background-image: url(../assets/img/header_mobile_w.svg);
+    }
+  }
 </style>

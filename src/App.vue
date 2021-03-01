@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
+    <DarkModeToggler class="darkMode" />
     <headerTop />
-    <DarkMode width="50" height="50" class="darkMode" />
     <Navvy />
     <router-view />
     <Footy />
@@ -12,14 +12,14 @@
   import HeaderTop from "./components/HeaderTop"
   import Navvy from "./components/Navvy"
   import Footy from "./components/Footy"
-  import DarkMode from "./components/darkMode/DarkMode"
+  import DarkModeToggler from "./components/darkMode/DarkModeToggler"
 
   export default {
     components: {
+      DarkModeToggler,
       HeaderTop,
       Navvy,
       Footy,
-      DarkMode,
     },
   }
 </script>
