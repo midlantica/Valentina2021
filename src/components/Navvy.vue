@@ -103,11 +103,43 @@
         background: lighten($green, 30);
         border: 1px dotted $purple;
       }
+
     }
 
     a {
       text-decoration: none;
       border-bottom: none;
+    }
+
+    .darkMode {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  [data-theme="dark"] .navBtns {
+    color: $green;
+
+    &:hover {
+      color: $green;
+    }
+
+    @include breakpoint($SmMd) {
+      color: $green;
+      border: 1px dotted hsla(72deg 62% 56%/0.5);
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  [data-theme="dark"] .navBtns.shopBtn,
+  [data-theme="dark"] .navBtns.wholesaleBtn {
+    // color: $black !important;
+
+    &:hover {
+      color: $black !important;
     }
   }
 
@@ -228,6 +260,14 @@
     }
   }
 
+  [data-theme="dark"].home .navBtns.homeBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
+    }
+  }
+
   body.artists-statement .homeBtn {
     // background-image: url(../assets/img/buttons/home_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
@@ -243,6 +283,14 @@
     }
   }
 
+  [data-theme="dark"].artists-statement .navBtns.homeBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
+    }
+  }
+
   body.portfolio .portfolioBtn {
     // background-image: url(../assets/img/buttons/gallery_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
@@ -254,6 +302,14 @@
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
+    }
+  }
+
+  [data-theme="dark"].portfolio .navBtns.portfolioBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
     }
   }
 
@@ -273,6 +329,14 @@
     }
   }
 
+  [data-theme="dark"].shop .navBtns.shopBtn {
+    color: $black;
+
+    @include breakpoint($SmMd) {
+      color: $black;
+    }
+  }
+
   body.licensing .licensingBtn {
     // background-image: url(../assets/img/buttons/shop_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
@@ -286,6 +350,14 @@
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
+    }
+  }
+
+  [data-theme="dark"].licensing .navBtns.licensingBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
     }
   }
 
@@ -304,6 +376,14 @@
     }
   }
 
+  [data-theme="dark"].wholesale .navBtns.wholesaleBtn {
+    color: $black;
+
+    @include breakpoint($SmMd) {
+      color: $black;
+    }
+  }
+
   body.contact .contactBtn {
     // background-image: url(../assets/img/buttons/contact_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
@@ -316,6 +396,14 @@
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
+    }
+  }
+
+  [data-theme="dark"].contact .navBtns.contactBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
     }
   }
 </style>

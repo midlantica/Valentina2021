@@ -14,6 +14,14 @@ body {
   height: 100vh;
 }
 
+body[data-theme="light"] {
+  background: $purple;
+}
+
+body[data-theme="dark"] {
+  background: hsl(0deg 0% 9%);
+}
+
 .wrapper {
   padding: 0;
   display: flex;
@@ -31,7 +39,12 @@ body {
 
   @include breakpoint($SmMdLg) {
     background: $white;
+    color: white;
   }
+}
+
+[data-theme="dark"] .wrapper {
+  background: none !important;
 }
 
 header,

@@ -28,9 +28,37 @@
     <meta name="theme-color" content="#b9d54a">
     <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicons/favicon.ico" type="image/x-icon">
+
+    <script>
+      (function() {
+        try {
+          // Checks for the color scheme of the device.
+          // In this case it checks for anything that is not light theme.
+          var media = window.matchMedia("not all and (prefers-color-scheme: light)"),
+            body = document.body;
+          if (localStorage.getItem("theme") == "dark") {
+            body.setAttribute("data-theme", "dark");
+          } else if (localStorage.getItem("theme") == "light") {
+            body.setAttribute("data-theme", "light");
+          } else if (media.matches) {
+            body.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+          }
+          media.addListener(function() {
+            if (media.matches) {
+              body.setAttribute("data-theme", "dark");
+              localStorage.setItem("theme", "dark");
+            } else {
+              body.setAttribute("data-theme", "light");
+              localStorage.setItem("theme", "light");
+            }
+          });
+        } catch (err) { }
+      })();
+    </script>
   </head>
 
-  <body>
+  <body data-theme="light">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
           Please enable it to continue.</strong>

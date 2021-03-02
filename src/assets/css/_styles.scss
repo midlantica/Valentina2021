@@ -14,6 +14,12 @@ h3 {
   }
 }
 
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+  color: $white;
+}
+
 h3,
 h4,
 h5 {
@@ -47,6 +53,21 @@ li {
   }
 
   & a {
+    font-weight: bold;
+  }
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] ul,
+[data-theme="dark"] li {
+  color: $white;
+
+  & b {
+    color: $white;
+  }
+
+  & a {
+    color: $white;
     font-weight: bold;
   }
 }

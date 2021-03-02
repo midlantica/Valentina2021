@@ -77,6 +77,7 @@
         border-top-right-radius: 0.5rem;
       }
       p {
+        color: $black;
         margin: 0.5em auto;
         font-size: 0.85em;
         text-align: center;

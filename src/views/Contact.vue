@@ -74,7 +74,7 @@
 
   p {
     // font-family: Register;
-    color: $grey;
+    // color: $grey;
     font-size: 1em;
     letter-spacing: 0.065em;
     margin: 0 0.5em 0 0;
@@ -124,7 +124,7 @@
           font-size: 0.9em;
           // align-self: flex-end;
           flex-basis: 0;
-          color: lighten($grey, 30);
+          // color: lighten($grey, 30);
 
           @include breakpoint($SmMd) {
             margin: 0.75em 0.5em 0 0em;
@@ -203,4 +203,19 @@
       }
     }
   }
+
+  [data-theme="dark"] label {
+    color: $white !important;
+  }
+
+[data-theme="dark"] button {
+    color: $black !important;
+    background: $green !important;
+  }
+
+  // [data-theme="dark"] input,
+  // [data-theme="dark"] select,
+  // [data-theme="dark"] textarea {
+
+  // }
 </style>
