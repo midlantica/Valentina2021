@@ -208,6 +208,11 @@
     color: $white !important;
   }
 
+[data-theme="dark"] button {
+    color: $black !important;
+    background: $green !important;
+  }
+
   // [data-theme="dark"] input,
   // [data-theme="dark"] select,
   // [data-theme="dark"] textarea {

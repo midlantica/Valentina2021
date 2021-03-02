@@ -318,7 +318,7 @@
     }
 
     img {
-      border: 1px solid hsl(42, 12%, 84%);
+      // border: 1px solid hsl(42, 12%, 84%);
       margin-bottom: -4px;
       border-radius: 0.5rem;
     }

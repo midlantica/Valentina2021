@@ -1,11 +1,11 @@
 <template>
-  <button
+  <div
     :title="theme == 'dark' ? 'Dark Theme' : 'Light Theme'"
     @click="toggleTheme()"
     class="theme"
   >
-    <component :is="theme == 'dark' ? 'Moon' : 'Sun'" height="20px" />
-  </button>
+    <component :is="theme == 'dark' ? 'Sun' : 'Moon'" height="20px" />
+  </div>
 </template>
 
 <script>
@@ -27,12 +27,12 @@
         if (this.theme == "dark") {
           this.theme = "light"
           document.body.setAttribute("data-theme", "light")
-          document.body.setAttribute("data-icon", "sun")
+          // document.body.setAttribute("data-icon", "moon")
           localStorage.setItem("theme", "light")
         } else {
           this.theme = "dark"
           document.body.setAttribute("data-theme", "dark")
-          document.body.setAttribute("data-icon", "moon")
+          // document.body.setAttribute("data-icon", "sun")
           localStorage.setItem("theme", "dark")
         }
       },
@@ -41,11 +41,13 @@
 </script>
 
 <style lang="scss" scoped>
-  button {
+  .theme {
+    display: block;
     cursor: pointer;
     z-index: 100;
-
-    position: absolute;
+    // width: 40px;
+    // height: 40px;
+    position: fixed;
     top: 1rem;
     right: 1rem;
   }

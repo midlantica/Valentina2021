@@ -103,6 +103,7 @@
         background: lighten($green, 30);
         border: 1px dotted $purple;
       }
+
     }
 
     a {
@@ -121,6 +122,15 @@
 
     &:hover {
       color: $green;
+    }
+
+    @include breakpoint($SmMd) {
+      color: $green;
+      border: 1px dotted hsla(72deg 62% 56%/0.5);
+
+      &:hover {
+        color: $black;
+      }
     }
   }
 
@@ -250,6 +260,14 @@
     }
   }
 
+  [data-theme="dark"].home .navBtns.homeBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
+    }
+  }
+
   body.artists-statement .homeBtn {
     // background-image: url(../assets/img/buttons/home_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
@@ -265,6 +283,14 @@
     }
   }
 
+  [data-theme="dark"].artists-statement .navBtns.homeBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
+    }
+  }
+
   body.portfolio .portfolioBtn {
     // background-image: url(../assets/img/buttons/gallery_btn.svg);
     background-image: url(../assets/img/buttons/nav_buttons_01.svg);
@@ -276,6 +302,14 @@
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
+    }
+  }
+
+  [data-theme="dark"].portfolio .navBtns.portfolioBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
     }
   }
 
@@ -297,6 +331,10 @@
 
   [data-theme="dark"].shop .navBtns.shopBtn {
     color: $black;
+
+    @include breakpoint($SmMd) {
+      color: $black;
+    }
   }
 
   body.licensing .licensingBtn {
@@ -312,6 +350,14 @@
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
+    }
+  }
+
+  [data-theme="dark"].licensing .navBtns.licensingBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
     }
   }
 
@@ -332,6 +378,10 @@
 
   [data-theme="dark"].wholesale .navBtns.wholesaleBtn {
     color: $black;
+
+    @include breakpoint($SmMd) {
+      color: $black;
+    }
   }
 
   body.contact .contactBtn {
@@ -346,6 +396,14 @@
       padding: 0.4em 0.75em;
       border: 1px dotted $purple;
       border-radius: 0.5em;
+    }
+  }
+
+  [data-theme="dark"].contact .navBtns.contactBtn {
+    //
+
+    @include breakpoint($SmMd) {
+      color: $black;
     }
   }
 </style>
